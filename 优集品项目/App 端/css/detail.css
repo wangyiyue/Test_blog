@@ -1,0 +1,660 @@
+/***************************** 基础样式 ***************************/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100px;
+  background-color: #eee;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 56.25px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 58.59375px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 62.5px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 64.6875px;
+  }
+}
+@media screen and (min-width: 440px) {
+  html {
+    font-size: 68.75px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 75px;
+  }
+}
+@media screen and (min-width: 520px) {
+  html {
+    font-size: 81.25px;
+  }
+}
+@media screen and (min-width: 560px) {
+  html {
+    font-size: 87.5px;
+  }
+}
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 93.75px;
+  }
+}
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 680px) {
+  html {
+    font-size: 106.25px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 112.5px;
+  }
+}
+@media screen and (min-width: 760px) {
+  html {
+    font-size: 118.75px;
+  }
+}
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 125px;
+  }
+}
+@media screen and (min-width: 960px) {
+  html {
+    font-size: 150px;
+  }
+}
+/*把英文写在前面，中文写后面*/
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  font-size: .12rem;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+  border: 0 none;
+}
+ul,
+li {
+  list-style: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+ol {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+/******* 用伪元素来清除浮动造成的塌陷 ******/
+.clearFix:after {
+  /* 从Ie8支持 */
+  content: "";
+  display: table;
+  clear: both;
+  overflow: hidden;
+}
+.clearFix {
+  /* Ie 6 7 */
+  zoom: 1;
+}
+body {
+  padding-top: .56rem;
+  position: relative;
+}
+/***************************** 头部导航 ***************************/
+nav {
+  width: 100%;
+  height: .56rem;
+  background: #31313C;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding-left: .16rem;
+  box-sizing: border-box;
+}
+nav h1 {
+  display: inline-block;
+  width: .65rem;
+  height: .2rem;
+  margin-top: .2rem;
+  font-weight: normal;
+}
+nav h1 img {
+  width: .65rem;
+  height: auto;
+}
+nav h1 a {
+  color: #fff;
+  font-size: .18rem;
+}
+nav div {
+  float: right;
+  margin-top: .14rem;
+}
+nav div a span {
+  display: inline-block;
+  width: .3rem;
+  height: .3rem;
+  background: url(../images/sousuo.png) no-repeat;
+  background-size: .3rem auto;
+  padding: 0 .06rem;
+  margin-left: .15rem;
+}
+nav div a .people {
+  background: url(../images/people.png) no-repeat;
+  background-size: .3rem auto;
+}
+nav div a .bag {
+  background: url(../images/bag.png) no-repeat;
+  background-size: .28rem auto;
+}
+/***************************** 隐藏的菜单 ***************************/
+.menu {
+  width: 100%;
+  height: 3.84rem;
+  overflow: auto;
+  background: #fff;
+  position: absolute;
+  top: .56rem;
+  left: 0rem;
+  z-index: 200;
+  display: none;
+  /***添加落空类 控制下拉三角和二级菜单的显示与隐藏***/
+}
+.menu .item {
+  width: 100%;
+  border-top: .01rem solid #f6f6f6;
+}
+.menu .item p {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: .48rem;
+  padding-left: .15rem;
+  font-size: .12rem;
+  position: relative;
+  line-height: .48rem;
+}
+.menu .item p:after {
+  content: "";
+  position: absolute;
+  right: .2rem;
+  top: .1rem;
+  width: .22rem;
+  height: .22rem;
+  background: url(../images/rightbtn.png) no-repeat;
+  -webkit-background-size: .22rem auto;
+  background-size: .22rem auto;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.menu .item .lastBarnd a {
+  display: block;
+  width: 100%;
+  height: .48rem;
+  color: #000;
+}
+.menu .item .lastBarnd :after {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.menu .item div {
+  padding-left: .15rem;
+  height: .48rem;
+  line-height: .48rem;
+  position: relative;
+}
+.menu .item div:after {
+  content: "";
+  position: absolute;
+  left: .3rem;
+  top: .2rem;
+  width: .12rem;
+  height: .12rem;
+  background: url(../images/search.png);
+  background-size: .12rem auto;
+}
+.menu .item div input {
+  width: 91%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: .4rem;
+  height: .22rem;
+  background: #ededed;
+  -webkit-border-radius: .2rem;
+  border-radius: .2rem;
+  border: 0 none;
+  outline: none;
+  font-size: .12rem;
+}
+.menu .item div span {
+  font-size: .14rem;
+  margin-left: .06rem;
+}
+.menu .item ul {
+  width: 100%;
+  display: none;
+}
+.menu .item ul li {
+  height: .48rem;
+  border-top: .01rem solid #f6f6f6;
+}
+.menu .item ul li a {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #4F494B;
+  height: .48rem;
+  line-height: .48rem;
+  padding-left: .32rem;
+}
+.menu .open p:after {
+  transform: rotate(-90deg);
+}
+.menu .open ul {
+  display: block;
+}
+/***************************** 隐藏的模态框 ***************************/
+.model {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+  top: 0;
+  z-index: 5;
+  display: none;
+}
+/*********************** 为body加上类dropDown 控制二级菜单显示***************/
+.dropDown {
+  overflow: hidden;
+}
+.dropDown .menu {
+  display: block;
+}
+.dropDown .model {
+  display: block;
+}
+.h3 {
+  color: #4F494B;
+  font-size: .17rem;
+  height: .6rem;
+  line-height: .6rem;
+  padding-left: .16rem;
+}
+.ss {
+  width: 100%;
+  height: .45rem;
+  line-height: .45rem;
+  text-align: center;
+  background: #fff;
+  margin-top: .01rem;
+  margin-bottom: .1rem;
+}
+.ss a {
+  color: #4F494B;
+  font-size: .12rem;
+}
+/****************************商品轮播图*********************************/
+.dior {
+  width: 100%;
+  height: 4rem;
+  background: #fff;
+}
+.dior .swiper-container {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+}
+.dior .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+.dior .swiper-container .swiper-slide img {
+  width: 4rem;
+  height: 4rem;
+}
+.dior .swiper-pagination-bullet {
+  width: .08rem;
+  height: .08rem;
+  opacity: 1;
+  background: #ddd;
+}
+.dior .swiper-pagination-bullet-active {
+  background: rgba(255, 0, 0, 0.7);
+}
+/****************************商品名称与价格****************************/
+.goodBox {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  padding-left: .2rem;
+  margin-bottom: .01rem;
+}
+.goodBox h2 {
+  padding-top: .2rem;
+  font-size: .17rem;
+  color: #4F494B;
+  line-height: .20rem;
+}
+.goodBox p {
+  line-height: .6rem;
+}
+.goodBox p span {
+  font-size: .21rem;
+  color: #E74C3C;
+}
+.goodBox p i {
+  display: inline-block;
+  width: .16rem;
+  height: .16rem;
+  background: url(../images/icon52.png);
+  -webkit-background-size: .16rem auto;
+  background-size: .16rem auto;
+  margin-left: .05rem;
+}
+.goodBox p em {
+  font-size: .13rem;
+  float: right;
+  font-style: normal;
+  color: #BEBDBB;
+  margin-right: .32rem;
+}
+.good {
+  background: #fff;
+}
+.good span {
+  display: inline-block;
+  font-size: .12rem;
+  margin: .1rem 0 .1rem .3rem;
+  color: #828282;
+  position: relative;
+}
+.good span:after {
+  content: "";
+  width: .05rem;
+  height: .05rem;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #828282;
+  position: absolute;
+  left: -0.1rem;
+  top: .05rem;
+}
+/****************************颜色和重量****************************/
+.price {
+  width: 100%;
+  height: .52rem;
+  line-height: .52rem;
+  background: #fff;
+  margin: .1rem 0;
+  padding: 0 .2rem;
+  position: relative;
+  font-size: .13rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.price:after {
+  content: "";
+  width: .22rem;
+  height: .22rem;
+  background: url(../images/icon03.png);
+  background-size: .22rem auto;
+  position: absolute;
+  right: .16rem;
+  top: .14rem;
+}
+.price em {
+  font-style: normal;
+  margin-left: .1rem;
+}
+/****************************产地****************************/
+.area {
+  width: 100%;
+  height: .85rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 .2rem;
+  position: relative;
+}
+.area:after {
+  content: "";
+  width: .22rem;
+  height: .22rem;
+  background: url(../images/icon03.png);
+  background-size: .22rem auto;
+  position: absolute;
+  right: .16rem;
+  top: .31rem;
+}
+.area .areaLeft {
+  width: .53rem;
+  height: .85rem;
+  line-height: .85rem;
+  float: left;
+}
+.area .areaLeft img {
+  width: .53rem;
+  height: .53rem;
+  vertical-align: middle;
+}
+.area .areaCenter {
+  float: left;
+  margin-left: .2rem;
+}
+.area .areaCenter h3 {
+  font-size: .14rem;
+  line-height: .32rem;
+  margin-top: .12rem;
+  color: #4F494B;
+}
+.area .areaCenter p {
+  color: #B3B3B3;
+  font-size: .12rem;
+  position: relative;
+  padding-left: .2rem;
+}
+.area .areaCenter p:after {
+  content: "";
+  width: .18rem;
+  height: .18rem;
+  position: absolute;
+  left: 0rem;
+  top: -0.03rem;
+  background: url(../images/icon01.png);
+  background-size: .18rem auto;
+}
+/****************************在售商品****************************/
+.sale {
+  width: 100%;
+  height: .45rem;
+  line-height: .45rem;
+  text-align: center;
+  background: #fff;
+  margin-top: .01rem;
+  margin-bottom: .1rem;
+}
+.sale a {
+  color: #4F494B;
+  font-size: .12rem;
+}
+/****************************商品详情****************************/
+.detailBox {
+  width: 100%;
+  background: #fff;
+  padding: .1rem .2rem .3rem;
+}
+.detailBox .detail {
+  width: 100%;
+}
+.detailBox .detail h3 {
+  color: #4F494B;
+  font-size: .17rem;
+  line-height: .38rem;
+  padding-left: .16rem;
+  margin-bottom: .3rem;
+}
+.detailBox .detail p {
+  font-size: .13rem;
+  line-height: .19rem;
+  color: #47494B;
+  padding-right: .3rem;
+  margin-bottom: .2rem;
+}
+.detailBox .detail img {
+  width: 6.24rem;
+  height: 6.24rem;
+  margin-left: -0.12rem;
+  margin-bottom: .14rem;
+}
+/****************************注意事项****************************/
+.care {
+  width: 100%;
+  background: #fff;
+  margin: .1rem 0;
+  padding-bottom: .32rem;
+}
+.care h3 {
+  color: #4F494B;
+  font-size: .17rem;
+  height: .6rem;
+  line-height: .6rem;
+  padding-left: .16rem;
+}
+.care ul li {
+  color: #828282;
+  font-size: .12rem;
+  line-height: .22rem;
+  padding-left: .16rem;
+}
+/****************************用户评价*********************/
+.user {
+  width: 100%;
+  background: #fff;
+  padding-bottom: .2rem;
+}
+.user h3 {
+  color: #4F494B;
+  font-size: .17rem;
+  height: .6rem;
+  line-height: .6rem;
+  padding-left: .16rem;
+}
+.user ul {
+  font-size: .12rem;
+  text-align: center;
+}
+.speak {
+  width: 100%;
+  height: .45rem;
+  line-height: .45rem;
+  text-align: center;
+  background: #fff;
+  margin-top: .01rem;
+  margin-bottom: .1rem;
+}
+.speak a {
+  color: #4F494B;
+  font-size: .12rem;
+}
+/******************************商品推荐********************************/
+.advice {
+  width: 100%;
+  background: #fff;
+  margin-bottom: .59rem;
+}
+.advice h3 {
+  color: #4F494B;
+  font-size: .17rem;
+  height: .6rem;
+  line-height: .6rem;
+  padding-left: .16rem;
+}
+.advice .swiper-container {
+  width: 100%;
+  height: 2.026rem;
+}
+.advice .swiper-container .swiper-slide {
+  width: 2.026rem;
+  height: 2.026rem;
+  background: #fff;
+}
+.advice .swiper-container .swiper-slide img {
+  width: 2.026rem;
+  height: 2.026rem;
+}
+/******************************底部购买********************************/
+.buys {
+  width: 100%;
+  background: #fff;
+  height: .49rem;
+  position: fixed;
+  bottom: 0rem;
+  left: 0rem;
+  z-index: 50;
+}
+.buys .buyLeft {
+  height: .49rem;
+  float: left;
+  background: #fff;
+  width: 70%;
+}
+.buys .buyLeft span {
+  font-size: .18rem;
+  line-height: .49rem;
+  padding-left: .15rem;
+  color: #4F494B;
+}
+.buys .buyRight {
+  width: 30%;
+  height: .49rem;
+  background: #E74C3C;
+  float: left;
+  color: #fff;
+  text-align: center;
+  line-height: .49rem;
+  font-size: .14rem;
+}

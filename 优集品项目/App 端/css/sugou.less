@@ -1,0 +1,194 @@
+@import "basic.less";
+@import "header.less";
+
+/*************广告部分******************/
+.banner{
+	background:#fff;
+	.sub_banner{
+		background:#E9F3FF;
+	}
+}
+.special-box{
+	background:#fff;
+	overflow:hidden;
+	a{
+		display:block;
+		padding:5%;
+		overflow:hidden;
+		.speial_left{
+			width:30%;
+		    float: left;
+		    position:relative;
+		    .marsk{
+		    	width:.38rem;
+		    	height:.38rem;
+				position:absolute;
+				top:0;
+				left:0;
+				background:#fff;
+
+		    }
+		}
+		.speial_right{
+			width:65%;
+		    padding-left: 36%;
+		    .goods_title{
+	    	    margin-top: 5%;
+			    color: #4F494B;
+			    font-size: .12rem;
+			    overflow: hidden;
+			    white-space: nowrap;
+			    text-overflow: ellipsis;
+		    }
+		    .goods_txt{
+		    	display: -webkit-box;
+			    height: .25rem;
+			    line-height: .25rem;
+			    color: #706F6F;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+		    }
+		    .goods_price{
+	    	    color: #E74C3C;	
+	    	    margin-top:.3rem;
+	    	    span{
+	    	    	font-size:.16rem;
+	    	    	margin-left: .13rem;
+	    	    }
+		    }
+		}
+	}
+}
+.goods_lst{
+	ul{
+		li{
+			width:50%;
+			float:left;
+			padding:0 .01rem;
+			position:relative;
+			a{display:block;}
+			.goods_descript{
+				background:#fff;
+				padding-left:.1rem;
+				position:relative;
+				.list_title{
+					height:.32rem;
+					line-height:.32rem;
+					font-size:.14rem;
+					color:#4F494B;
+					display: -webkit-box;
+				}
+				.list_infor{
+					color: #828282;
+				    overflow: hidden;
+				    white-space: nowrap;
+				    text-overflow: ellipsis;
+				    padding-right: .35rem;
+				    margin-top:.05rem;
+				}
+				.list_price{
+					color: #E74C3C;
+				    font-size: .14rem;
+				    margin-top: .1rem;
+				    padding-bottom: .09rem;
+				}
+				.goods_add{
+					width:.32rem;
+					height:.32rem;
+					background:#E74C3C url(../images/sugou/supply-addCart.png);
+				    background-size: 100%;
+    				border-radius: 50%;
+    				position:absolute;
+    				bottom:.2rem;
+    				right:.18rem;
+    				margin-top:.02rem;
+				}
+			}
+			.popular{
+				    color: #5D4B37;
+				    background: #E3F0FF;
+				    padding:.03rem 0 .03rem .12rem;
+				    position:absolute;
+				    top:0;
+				    left:0;
+				span{
+					display:inline-block;
+				}
+				&:after{
+					content:"";
+					width:.12rem;
+					height:100%;
+					position:absolute;
+					right:-.1rem;
+					bottom:0;
+					background:url(../images/sugou/supply-icon-jb.png);
+					background-size:100%;
+				}
+			}
+		}
+	}
+}
+.slide{
+	width:100%;
+	overflow:hidden;
+    
+	li{
+		width:33%;
+		float:left;
+		margin-right: .01rem;
+		.bg_f{background:#fff;
+			padding-left:.1rem;
+			padding-bottom: .1rem;
+		}
+		a{
+			display:block;
+			.img{
+				position:relative;
+			}
+			img{
+				width:100%;
+			}
+			.pro_marsk{
+				position: absolute;
+			    left: .15rem;
+			    top:.15rem;
+			    background: #E3F0FF;
+			    text-align: center;
+			    width: .4rem;
+			    height: .4rem;
+			    line-height: .4rem;
+			    text-align: center;
+			    color: #5D4B37;
+			    border-radius: 50%;
+			}
+		}
+		.pro_title{
+		   
+		    color: #4F494B;
+		    overflow: hidden;
+		    white-space: nowrap;
+		    text-overflow: ellipsis;
+		}
+		.pro_info{
+		    margin-top: .1rem;
+		    white-space: nowrap;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    .price{
+		    	color:#E74C3C;
+		    }
+		    .many{
+		    	color:#828282;
+		    }
+		}
+	}
+}
+.footer{
+	height:.8rem;
+	background:url(../images/sugou/supply-title-bj.png);
+	background-size:100%;
+	text-align:center;
+	line-height:.2rem;
+	color: #5D4B37;
+	padding:.3rem 0;
+}

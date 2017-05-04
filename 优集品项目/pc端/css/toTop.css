@@ -1,0 +1,33 @@
+/**************************回到顶部与客服********************************/
+.slide {
+  width: 64px;
+  height: 130px;
+  position: fixed;
+  right: 0px;
+  bottom: 165px;
+  display: none;
+}
+.slide .btn {
+  width: 44px;
+  height: 46px;
+  background: #F5F5F5;
+  margin-bottom: 10px;
+  padding: 7px 9px;
+  text-align: center;
+  line-height: 46px;
+  cursor: pointer;
+}
+.slide .btn img {
+  width: 45px;
+}
+.slide .toTop img {
+  display: block;
+}
+.slide .toTop p {
+  display: none;
+  font-size: 14px;
+  color: #595959;
+  line-height: 18px;
+  letter-spacing: 3px;
+  margin-top: 4px;
+}

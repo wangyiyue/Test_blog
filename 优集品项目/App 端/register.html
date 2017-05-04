@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="short icon" href="favicon.ico">
+	<title>register</title>
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+<body>
+	<div class="loginBox">
+		<img src="images/login_01.jpg">
+		<a href="" class="goBack"></a>
+		<div class="main">
+			<div class="user">
+				<span></span>
+				<input type="text" name="username" placeholder="请输入手机号" class="tel">
+			</div>
+			<div class="psd">
+				<span class="check"></span>
+				<input type="password" name="password" placeholder="请输入验证码" class="msg">
+				<i class='checks'>验证</i>
+			</div>
+			<button>手机快捷登录</button>
+			<p class="phone">未注册的手机号，登录时将自动注册，登陆即表示您同意</p>
+			<p class="protcol"><a href="">《优集品用户协议》</a></p>
+			<p class="hao">
+				<a href="login.html">使用帐号登录 <i></i></a>
+			</p>
+		</div>
+	</div>
+
+	<!-- <div style="width:30px;height:300px;"></div> -->
+    <script src ="js/zepto.min.js"></script>
+	<script src ="js/swiper.min.js"></script>
+	<!-- <script src ="js/login.js"></script> -->
+	<script>
+		// 点击验证
+		$('.checks').click(function(){
+			// 获取手机号
+			var tel = $.trim($('.tel').val());
+			// 匹配正则
+			var partter = /^1[34578]\d{9}$/;
+			if(tel == ""){
+				alert('手机号不能为空！');
+			}else if(!(partter.test(tel))){
+				alert('请输入正确的手机号！');
+			}else if(partter.test(tel)){
+
+				var date = 60;
+				// 启动倒计时
+				var timer = setInterval(function(){
+					if(date > 0){
+						$('.checks').html(date);
+						date--;
+					}else{
+						clearInterval(timer);
+						$('.checks').html("验证");
+					}
+				},1000);
+			}
+		});
+
+		// 点击快捷登录
+		$('button').click(function(){
+			// 获取手机号
+			var tel = $.trim($('.tel').val());
+			// 匹配正则
+			var partter = /^1[34578]\d{9}$/;
+			// 获取验证码
+			var msg = $.trim($('.msg').val());
+			// 匹配正则
+			var partter1 = /^\d{4}$/; 
+			if(tel == "" || msg ==""){
+				alert('请填写完整信息再提交！');
+			}else if(!(partter.test(tel))){
+				alert('手机号格式不正确！');
+			}else if(!(partter1.test(msg))){
+				alert('请获取验证码！');
+			}
+		});
+	</script>
+</body>
+</html>

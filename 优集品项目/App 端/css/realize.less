@@ -1,0 +1,101 @@
+@import "basic.less";
+@import "header.less";
+
+/**********************************主体部分***********************************/
+section{
+	div{
+		padding-bottom: .3rem;
+		border-bottom:0.01rem dashed #fa3432;
+		dl{
+			font-size:.22rem;
+			width:5.5rem;
+			margin:0 auto;
+			dt{
+				color:#FA3432;
+				line-height:.9rem;
+				font-size:.22rem;
+				i{
+					display: inline-block;
+					width:.3rem;
+					height:.3rem;
+					font-size:.22rem;
+					line-height: .3rem;
+					text-align: center;
+					border-radius: .15rem;
+					background:#FA3432;
+					color:#fff;
+					margin-right: .16rem;
+					font-style: normal;
+				}
+			}
+			dd{
+				color:#868484;
+				width:5.5rem;
+				margin:0rem;
+				font-size:.22rem;
+				line-height:.32rem;
+			}
+		}
+	}
+	.dLast{
+		border:0 none;
+	}
+}
+/************************************ 模态框 *********************************/
+.model{
+	width:100%;
+	height:100%;
+	background:rgba(0, 0, 0, 0.5);
+	position:absolute;
+	left:0rem;
+	top:0rem;
+	z-index:5;
+	display: none;
+	.box{
+		width:5rem;
+		height:1.4rem;
+		background:#fff;
+		position:fixed;
+		left:.6rem;
+		top:30%;
+		-webkit-border-radius:.1rem;
+		border-radius:.1rem;
+		text-align: center;
+		.tips{
+			font-size:.18rem;
+			margin:.2rem 0 .1rem;
+		}
+		.pho{
+			font-size:.14rem;
+			color:#555;
+			margin-bottom:.16rem;
+		}
+		button{
+			width:1.5rem;
+			height:.36rem;
+			line-height:.36rem;
+			color:#fff;
+			font-size:.18rem;
+			background:@lightRed;
+			outline:0 none;
+			border:0 none;
+			-webkit-border-radius:.1rem;
+			border-radius:.1rem;
+		}
+		span{
+			position:absolute;
+			right:.06rem;
+			top:.06rem;
+			background:rgba(0,0,0,0.5);
+			-webkit-border-radius:.13rem;
+			border-radius:.13rem;
+			font-size:.26rem;
+			width:.26rem;
+			height:.26rem;
+			line-height:.22rem;
+			color:#fff;
+			font-family:"微软雅黑";
+		}
+	}
+}
+@import "footer.less";

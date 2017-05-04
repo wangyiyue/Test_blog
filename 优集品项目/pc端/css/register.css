@@ -1,0 +1,372 @@
+@import "footer.css";
+@import "header.css";
+.w1150 {
+  width: 1150px;
+  margin: 0 auto;
+}
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+/*兼容ie*/
+.vip {
+  height: 280px;
+  margin-top: 60px;
+}
+.vip .order {
+  width: 8%;
+  height: 235px;
+  float: left;
+}
+.vip .order dt {
+  padding: 20px 0px 30px 0px;
+}
+.vip .order dt a {
+  font-size: 20px;
+}
+.vip .order dd {
+  height: 30px;
+  line-height: 30px;
+}
+.vip .order dd a {
+  font-size: 14px;
+}
+.vip .order dd a:hover {
+  color: #ff3f2a;
+}
+.vip .information {
+  width: 91%;
+  height: 280px;
+  float: right;
+}
+.vip .information .information_top {
+  height: 245px;
+  width: 100%;
+}
+.vip .information .information_top .num {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  background: #f8f8f8;
+  color: #828282;
+  font-size: 14px;
+}
+.vip .information .information_top .num span {
+  float: left;
+  font-size: 16px;
+  margin-left: 20px;
+}
+.vip .information .information_top .num i {
+  float: right;
+  font-style: normal;
+  margin-right: 20px;
+}
+.vip .information .information_top .bronze {
+  width: 100%;
+  height: 205px;
+  border: 1px solid #ececec;
+  padding: 10px 0px 20px 0px;
+}
+.vip .information .information_top .bronze .bronze-vip {
+  width: 393px;
+  height: 175px;
+  border-right: 1px solid #ececec;
+  float: left;
+}
+.vip .information .information_top .bronze .bronze-vip .bronze-vip-left {
+  float: left;
+}
+.vip .information .information_top .bronze .bronze-vip .bronze-vip-left .data3 {
+  font-size: 20px;
+  width: 150px;
+  height: 92px;
+  position: relative;
+  margin: 22px 0px 0px 0px;
+  float: left;
+}
+.vip .information .information_top .bronze .bronze-vip .bronze-vip-left .data3 .outer {
+  width: 92px;
+  height: 92px;
+  position: absolute;
+}
+.vip .information .information_top .bronze .bronze-vip .bronze-vip-left .data3 .over50,
+.vip .information .information_top .bronze .bronze-vip .bronze-vip-left .data3 .inner,
+.vip .information .information_top .bronze .bronze-vip .bronze-vip-left .data3 .bg {
+  width: 92px;
+  height: 92px;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+}
+.vip .information .information_top .bronze .bronze-vip .bronze-vip-left .data3 .inner {
+  transition: transform 0.3s;
+  border-color: red;
+}
+.vip .information .information_top .bronze .bronze-vip .bronze-vip-left .data3 .over50 {
+  border-color: red;
+}
+.vip .information .information_top .bronze .bronze-vip .bronze-vip-left .data3 .bg {
+  color: red;
+  line-height: 136px;
+  text-align: center;
+}
+.vip .information .information_top .bronze .bronze-vip .bronze-vip-left i {
+  font-style: normal;
+  margin: 12px 0px 0px 51px;
+  display: block;
+  width: 70px;
+  height: 20px;
+  line-height: 20px;
+  background: #cf8556;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+}
+.vip .information .information_top .bronze .bronze-vip .bronze-vip-right {
+  width: 173px;
+  height: 50px;
+  line-height: 50px;
+  float: right;
+  margin-right: 30px;
+}
+.vip .information .information_top .bronze .bronze-vip .bronze-vip-right p {
+  border-bottom: 1px solid #ececec;
+}
+.vip .information .information_top .bronze .bronze-vip .bronze-vip-right p span {
+  float: left;
+  color: #4a4a4a;
+}
+.vip .information .information_top .bronze .bronze-vip .bronze-vip-right p b {
+  float: right;
+  color: #ff3f2a;
+  font-weight: normal;
+}
+.vip .information .information_top .bronze .bronze-num {
+  width: 393px;
+  height: 175px;
+  display: block;
+  border-right: 1px solid #ececec;
+  float: left;
+}
+.vip .information .information_top .bronze .bronze-num em {
+  color: #4a4a4a;
+  margin: 27px 0px 69px 78px;
+  display: inline-block;
+}
+.vip .information .information_top .bronze .bronze-num .progress {
+  margin-left: 37px;
+  position: relative;
+}
+.vip .information .information_top .bronze .bronze-num .progress .pout1 {
+  width: 12px;
+  height: 5px;
+  background: #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  float: left;
+}
+.vip .information .information_top .bronze .bronze-num .progress .pout1 .pin1 {
+  width: 12px;
+  height: 5px;
+  background: red;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.vip .information .information_top .bronze .bronze-num .progress .pout2 {
+  width: 90px;
+  height: 5px;
+  background: #ccc;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 1px;
+  float: left;
+  margin-left: 5px;
+}
+.vip .information .information_top .bronze .bronze-num .progress .pout2 .pin2 {
+  width: 90px;
+  height: 5px;
+  background: #ccc;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 1px;
+}
+.vip .information .information_top .bronze .bronze-num .progress .pout3 {
+  width: 12px;
+  height: 5px;
+  background: #ccc;
+  border-radius: 3px;
+  float: left;
+  margin-left: 5px;
+}
+.vip .information .information_top .bronze .bronze-num .progress .pout3 .pin3 {
+  width: 12px;
+  height: 5px;
+  background: #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.vip .information .information_top .bronze .bronze-num .progress .box {
+  position: absolute;
+  left: 6px;
+  top: -15px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+.vip .information .information_top .bronze .bronze-num .progress .box img {
+  width: 15px;
+  height: 13px;
+}
+.vip .information .information_top .bronze .bronze-num p span {
+  display: inline-block;
+}
+.vip .information .information_top .bronze .bronze-num p span.coppe {
+  margin: 15px 0px 0px 45px;
+}
+.vip .information .information_top .bronze .bronze-num p span.slivers {
+  margin: 0px 71px 0px 64px;
+}
+.vip .information .information_top .bronze .bronze-num p span.wgold {
+  margin: 0px 0px 0px 62px;
+}
+.vip .information .information_top .bronze .bronze-num p span.num1 {
+  margin: 15px 77px 0px 54px;
+}
+.vip .information .information_top .bronze .bronze-num p span.num2 {
+  margin: 15px 75px 0px 3px;
+}
+.vip .information .information_top .bronze .bronze-num p span.num3 {
+  margin: 15px 0px 0px 74px;
+}
+.vip .information .information_top .bronze .signin {
+  float: right;
+}
+.vip .information .information_top .bronze .signin .signins {
+  width: 110px;
+  height: 110px;
+  margin: 34px 69px 0px 0px;
+}
+.vip .information .information_top .bronze .signin .signins p {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+.vip .information .information_top .bronze .signin .signins p i {
+  color: #ff3f2a;
+}
+.vip .information .information_top .bronze .signin .signins p.btn {
+  width: 100px;
+  height: 30px;
+  display: block;
+  line-height: 30px;
+  text-align: center;
+  background: #e74c3c;
+  color: white;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  margin: 18px 0px 5px 6px;
+}
+.grow {
+  margin: 0px 0px 130px 101px;
+}
+.grow .grow_top {
+  width: 1048px;
+  margin: 30px 0px 0px 102px;
+}
+.grow .grow_top .grow_top_on {
+  height: 40px;
+  line-height: 40px;
+  width: 1028px;
+  padding: 0px 10px;
+  background: #f8f8f8;
+}
+.grow .grow_top .grow_top_on i {
+  float: left;
+  font-size: 16px;
+}
+.grow .grow_top .grow_top_on span {
+  float: right;
+  color: #ccc;
+  cursor: pointer;
+}
+.grow .grow_top .grow_top_off {
+  width: 1038px;
+  padding: 20px 0px 0px 10px;
+  display: none;
+}
+.grow .grow_top .grow_top_off p {
+  font-size: 12px;
+  height: 30px;
+}
+.grow .grow_top .grow_top_off table td {
+  width: 190px;
+  bodrder: 1px solid red;
+}
+.grow .grow_top .grow_top_off table tr {
+  height: 40px;
+  text-align: center;
+}
+.grow .grow_top .ons {
+  height: 510px;
+  display: block;
+}
+.grow .grow_footer {
+  width: 1048px;
+  margin: 30px 0px 0px 102px;
+}
+.grow .grow_footer .grow_top_on {
+  height: 40px;
+  line-height: 40px;
+  width: 1028px;
+  padding: 0px 10px;
+  background: #f8f8f8;
+}
+.grow .grow_footer .grow_top_on i {
+  float: left;
+  font-size: 16px;
+}
+.grow .grow_footer .grow_top_on span {
+  float: right;
+  color: #ccc;
+  cursor: pointer;
+}
+.grow .grow_footer .txt {
+  display: none;
+  margin-top: 20px;
+}
+.grow .grow_footer .txt p {
+  height: 30px;
+  line-height: 30px;
+}
+.grow .grow_footer .txts {
+  display: block;
+}

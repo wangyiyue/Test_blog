@@ -1,0 +1,249 @@
+/***************************** 基础样式 ***************************/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100px;
+  background-color: #eee;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 56.25px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 58.59375px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 62.5px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 64.6875px;
+  }
+}
+@media screen and (min-width: 440px) {
+  html {
+    font-size: 68.75px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 75px;
+  }
+}
+@media screen and (min-width: 520px) {
+  html {
+    font-size: 81.25px;
+  }
+}
+@media screen and (min-width: 560px) {
+  html {
+    font-size: 87.5px;
+  }
+}
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 93.75px;
+  }
+}
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 680px) {
+  html {
+    font-size: 106.25px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 112.5px;
+  }
+}
+@media screen and (min-width: 760px) {
+  html {
+    font-size: 118.75px;
+  }
+}
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 125px;
+  }
+}
+@media screen and (min-width: 960px) {
+  html {
+    font-size: 150px;
+  }
+}
+/*把英文写在前面，中文写后面*/
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  font-size: .12rem;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+  border: 0 none;
+}
+ul,
+li {
+  list-style: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+ol {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+/******* 用伪元素来清除浮动造成的塌陷 ******/
+.clearFix:after {
+  /* 从Ie8支持 */
+  content: "";
+  display: table;
+  clear: both;
+  overflow: hidden;
+}
+.clearFix {
+  /* Ie 6 7 */
+  zoom: 1;
+}
+.loginBox {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.loginBox img {
+  width: 100%;
+}
+.loginBox .goBack {
+  display: block;
+  width: .36rem;
+  height: .36rem;
+  position: absolute;
+  left: .1rem;
+  top: .32rem;
+  background: url(../images/icon17.png) no-repeat center center;
+  background-size: .16rem .16rem;
+}
+.loginBox .main {
+  position: absolute;
+  top: 10%;
+  left: .2rem;
+  right: .2rem;
+}
+.loginBox .main .user,
+.loginBox .main .psd {
+  width: 100%;
+}
+.loginBox .main .user span,
+.loginBox .main .psd span {
+  display: inline-block;
+  width: .48rem;
+  height: .48rem;
+  background: url(../images/icon14.png) no-repeat center center;
+  -webkit-background-size: .24rem auto;
+  background-size: .24rem auto;
+}
+.loginBox .main .user .check,
+.loginBox .main .psd .check {
+  background: url(../images/icon15.png) no-repeat center center;
+  -webkit-background-size: .24rem auto;
+  background-size: .24rem auto;
+}
+.loginBox .main .user input,
+.loginBox .main .psd input {
+  font-size: .13rem;
+  width: calc(89.7%);
+  padding-left: .05rem;
+  height: .31rem;
+  border: 0 none;
+  background: none;
+  border-bottom: 0.01rem solid rgba(255, 255, 255, 0.5);
+  vertical-align: top;
+  margin-top: .08rem;
+  color: rgba(255, 255, 255, 0.7);
+  outline: none;
+}
+.loginBox .main .psd {
+  position: relative;
+  margin-bottom: .2rem;
+}
+.loginBox .main .psd i {
+  position: absolute;
+  right: .12rem;
+  top: .1rem;
+  padding: .03rem .2rem;
+  font-style: normal;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  text-align: center;
+  border-radius: .2rem;
+}
+.loginBox .main button {
+  width: 100%;
+  height: .44rem;
+  line-height: .44rem;
+  font-size: .16rem;
+  background: rgba(0, 0, 0, 0.35);
+  border: 0 none;
+  outline: none;
+  -webkit-border-radius: .05rem;
+  border-radius: .05rem;
+  color: #ccc;
+  margin-top: .2rem;
+}
+.loginBox .main .hao {
+  width: 100%;
+  text-align: center;
+  margin-top: .2rem;
+}
+.loginBox .main .hao .qt {
+  color: #fff;
+  font-size: .14rem;
+  line-height: .54rem;
+}
+.loginBox .main .hao .qt i {
+  display: inline-block;
+  width: .2rem;
+  height: .01rem;
+  background: #fff;
+  background-size: .16rem auto;
+  vertical-align: middle;
+  margin-left: .08rem;
+}
+.loginBox .main .hao .qq {
+  display: block;
+  width: .5rem;
+  height: .5rem;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: url(../images/qq.png) no-repeat;
+  background-size: .5rem auto;
+}

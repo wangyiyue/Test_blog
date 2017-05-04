@@ -1,0 +1,503 @@
+/***************************** 基础样式 ***************************/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100px;
+  background-color: #eee;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 56.25px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 58.59375px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 62.5px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 64.6875px;
+  }
+}
+@media screen and (min-width: 440px) {
+  html {
+    font-size: 68.75px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 75px;
+  }
+}
+@media screen and (min-width: 520px) {
+  html {
+    font-size: 81.25px;
+  }
+}
+@media screen and (min-width: 560px) {
+  html {
+    font-size: 87.5px;
+  }
+}
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 93.75px;
+  }
+}
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 680px) {
+  html {
+    font-size: 106.25px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 112.5px;
+  }
+}
+@media screen and (min-width: 760px) {
+  html {
+    font-size: 118.75px;
+  }
+}
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 125px;
+  }
+}
+@media screen and (min-width: 960px) {
+  html {
+    font-size: 150px;
+  }
+}
+/*把英文写在前面，中文写后面*/
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  font-size: .12rem;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+  border: 0 none;
+}
+ul,
+li {
+  list-style: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+ol {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+/******* 用伪元素来清除浮动造成的塌陷 ******/
+.clearFix:after {
+  /* 从Ie8支持 */
+  content: "";
+  display: table;
+  clear: both;
+  overflow: hidden;
+}
+.clearFix {
+  /* Ie 6 7 */
+  zoom: 1;
+}
+body {
+  padding-top: .56rem;
+  position: relative;
+}
+/***************************** 头部导航 ***************************/
+nav {
+  width: 100%;
+  height: .56rem;
+  background: #31313C;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding-left: .16rem;
+  box-sizing: border-box;
+}
+nav h1 {
+  display: inline-block;
+  width: .65rem;
+  height: .2rem;
+  margin-top: .2rem;
+  font-weight: normal;
+}
+nav h1 img {
+  width: .65rem;
+  height: auto;
+}
+nav h1 a {
+  color: #fff;
+  font-size: .18rem;
+}
+nav div {
+  float: right;
+  margin-top: .14rem;
+}
+nav div a span {
+  display: inline-block;
+  width: .3rem;
+  height: .3rem;
+  background: url(../images/sousuo.png) no-repeat;
+  background-size: .3rem auto;
+  padding: 0 .06rem;
+  margin-left: .15rem;
+}
+nav div a .people {
+  background: url(../images/people.png) no-repeat;
+  background-size: .3rem auto;
+}
+nav div a .bag {
+  background: url(../images/bag.png) no-repeat;
+  background-size: .28rem auto;
+}
+/***************************** 隐藏的菜单 ***************************/
+.menu {
+  width: 100%;
+  height: 3.84rem;
+  overflow: auto;
+  background: #fff;
+  position: absolute;
+  top: .56rem;
+  left: 0rem;
+  z-index: 200;
+  display: none;
+  /***添加落空类 控制下拉三角和二级菜单的显示与隐藏***/
+}
+.menu .item {
+  width: 100%;
+  border-top: .01rem solid #f6f6f6;
+}
+.menu .item p {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: .48rem;
+  padding-left: .15rem;
+  font-size: .12rem;
+  position: relative;
+  line-height: .48rem;
+}
+.menu .item p:after {
+  content: "";
+  position: absolute;
+  right: .2rem;
+  top: .1rem;
+  width: .22rem;
+  height: .22rem;
+  background: url(../images/rightbtn.png) no-repeat;
+  -webkit-background-size: .22rem auto;
+  background-size: .22rem auto;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.menu .item .lastBarnd a {
+  display: block;
+  width: 100%;
+  height: .48rem;
+  color: #000;
+}
+.menu .item .lastBarnd :after {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.menu .item div {
+  padding-left: .15rem;
+  height: .48rem;
+  line-height: .48rem;
+  position: relative;
+}
+.menu .item div:after {
+  content: "";
+  position: absolute;
+  left: .3rem;
+  top: .2rem;
+  width: .12rem;
+  height: .12rem;
+  background: url(../images/search.png);
+  background-size: .12rem auto;
+}
+.menu .item div input {
+  width: 91%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: .4rem;
+  height: .22rem;
+  background: #ededed;
+  -webkit-border-radius: .2rem;
+  border-radius: .2rem;
+  border: 0 none;
+  outline: none;
+  font-size: .12rem;
+}
+.menu .item div span {
+  font-size: .14rem;
+  margin-left: .06rem;
+}
+.menu .item ul {
+  width: 100%;
+  display: none;
+}
+.menu .item ul li {
+  height: .48rem;
+  border-top: .01rem solid #f6f6f6;
+}
+.menu .item ul li a {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #4F494B;
+  height: .48rem;
+  line-height: .48rem;
+  padding-left: .32rem;
+}
+.menu .open p:after {
+  transform: rotate(-90deg);
+}
+.menu .open ul {
+  display: block;
+}
+/***************************** 隐藏的模态框 ***************************/
+.model {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+  top: 0;
+  z-index: 5;
+  display: none;
+}
+/*********************** 为body加上类dropDown 控制二级菜单显示***************/
+.dropDown {
+  overflow: hidden;
+}
+.dropDown .menu {
+  display: block;
+}
+.dropDown .model {
+  display: block;
+}
+/*************广告部分******************/
+.banner {
+  background: #fff;
+}
+.banner .sub_banner {
+  background: #E9F3FF;
+}
+.special-box {
+  background: #fff;
+  overflow: hidden;
+}
+.special-box a {
+  display: block;
+  padding: 5%;
+  overflow: hidden;
+}
+.special-box a .speial_left {
+  width: 30%;
+  float: left;
+  position: relative;
+}
+.special-box a .speial_left .marsk {
+  width: .38rem;
+  height: .38rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+.special-box a .speial_right {
+  width: 65%;
+  padding-left: 36%;
+}
+.special-box a .speial_right .goods_title {
+  margin-top: 5%;
+  color: #4F494B;
+  font-size: .12rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.special-box a .speial_right .goods_txt {
+  display: -webkit-box;
+  height: .25rem;
+  line-height: .25rem;
+  color: #706F6F;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.special-box a .speial_right .goods_price {
+  color: #E74C3C;
+  margin-top: .3rem;
+}
+.special-box a .speial_right .goods_price span {
+  font-size: .16rem;
+  margin-left: .13rem;
+}
+.goods_lst ul li {
+  width: 50%;
+  float: left;
+  padding: 0 .01rem;
+  position: relative;
+}
+.goods_lst ul li a {
+  display: block;
+}
+.goods_lst ul li .goods_descript {
+  background: #fff;
+  padding-left: .1rem;
+  position: relative;
+}
+.goods_lst ul li .goods_descript .list_title {
+  height: .32rem;
+  line-height: .32rem;
+  font-size: .14rem;
+  color: #4F494B;
+  display: -webkit-box;
+}
+.goods_lst ul li .goods_descript .list_infor {
+  color: #828282;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: .35rem;
+  margin-top: .05rem;
+}
+.goods_lst ul li .goods_descript .list_price {
+  color: #E74C3C;
+  font-size: .14rem;
+  margin-top: .1rem;
+  padding-bottom: .09rem;
+}
+.goods_lst ul li .goods_descript .goods_add {
+  width: .32rem;
+  height: .32rem;
+  background: #e74c3c url(../images/sugou/supply-addCart.png);
+  background-size: 100%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: .2rem;
+  right: .18rem;
+  margin-top: .02rem;
+}
+.goods_lst ul li .popular {
+  color: #5D4B37;
+  background: #E3F0FF;
+  padding: .03rem 0 .03rem .12rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.goods_lst ul li .popular span {
+  display: inline-block;
+}
+.goods_lst ul li .popular:after {
+  content: "";
+  width: .12rem;
+  height: 100%;
+  position: absolute;
+  right: -0.1rem;
+  bottom: 0;
+  background: url(../images/sugou/supply-icon-jb.png);
+  background-size: 100%;
+}
+.slide {
+  width: 100%;
+  overflow: hidden;
+}
+.slide li {
+  width: 33%;
+  float: left;
+  margin-right: .01rem;
+}
+.slide li .bg_f {
+  background: #fff;
+  padding-left: .1rem;
+  padding-bottom: .1rem;
+}
+.slide li a {
+  display: block;
+}
+.slide li a .img {
+  position: relative;
+}
+.slide li a img {
+  width: 100%;
+}
+.slide li a .pro_marsk {
+  position: absolute;
+  left: .15rem;
+  top: .15rem;
+  background: #E3F0FF;
+  width: .4rem;
+  height: .4rem;
+  line-height: .4rem;
+  text-align: center;
+  color: #5D4B37;
+  border-radius: 50%;
+}
+.slide li .pro_title {
+  color: #4F494B;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.slide li .pro_info {
+  margin-top: .1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.slide li .pro_info .price {
+  color: #E74C3C;
+}
+.slide li .pro_info .many {
+  color: #828282;
+}
+.footer {
+  height: .8rem;
+  background: url(../images/sugou/supply-title-bj.png);
+  background-size: 100%;
+  text-align: center;
+  line-height: .2rem;
+  color: #5D4B37;
+  padding: .3rem 0;
+}

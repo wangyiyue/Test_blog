@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/goods-detai.css">
+	<link rel="stylesheet icon" type="text/css" href="images/favicon.ico">
+	<script src="js/jquery-1.11.3.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.jqzoom.js"></script>
+	<script src="js/goods_detail.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="detai">
+				<!-- 头部 开始-->
+				<div class="header">
+					<div class="headerContent">
+						<!-- logo -->	
+						<h1>
+							<a href="#">
+								<img src="images/logo.png" alt="logo">
+							</a>
+						</h1>
+						<div class="headerRight">
+							<ul>
+								<li>
+									<a href="" class="function1" title="下载app"></a>
+									<div class="weixin">
+										<img src="images/app.png">
+										<i></i>
+									</div>
+								</li>
+								<li><a href="" class="function2" title="购物袋"></a></li>
+								
+								<li><a href="" class="function3" title="个人中心"></a></li>
+							</ul>
+							<!-- 搜索框 -->
+							<div class="search">
+								<form action="" method="">
+									<span></span>
+									<input type="text" placeholder ="搜索" class="sear">
+								</form>
+								<ol>
+									<li><a href="javascript:;">口罩</a></li>
+									<li><a href="javascript:;">马卡龙</a></li>
+									<li><a href="javascript:;">美妙乐事</a></li>
+									<li><a href="javascript:;">锅</a></li>
+									<li><a href="javascript:;">瑞典</a></li>
+									<li><a href="javascript:;">北欧</a></li>
+									<li><a href="javascript:;">抱枕</a></li>
+									<li><a href="javascript:;">收纳</a></li>
+									<li><a href="javascript:;">餐碗</a></li>
+									<li><a href="javascript:;">面膜</a></li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 头部 结束-->
+
+				<!-- 导航 开始 -->
+				<div class="navWrap">
+					<div class="navBox">
+						<a href="" class="custorm">联系客服</a>
+						<a href="" class="bag" title="购物袋"></a>
+						<div class="nav">
+							<a href="">首页</a>
+							<a href="">新品</a>			
+							<a href="">美味餐厨</a>
+							<a href="">家纺家饰</a>
+							<a href="">生活日用</a>
+							<a href="">健康美体</a>
+							<a href="">文具数码</a>
+							<a href="">全球购</a>
+							<a href="">品牌</a>
+						</div>
+					</div>
+					<div class="hasSecont">
+						<ul class="item">
+							<li class="txt">
+								
+							</li>
+							<li class="txt">
+								
+							</li>
+							<li class="txt">
+								<a href="">烹饪锅具</a>
+								<a href="">厨房工具</a>
+								<a href="">厨房电器</a>
+								<a href="">餐具桌面</a>
+								<a href="">水具酒具</a>
+								<a href="">咖啡茶具</a>
+								<a href="">烘焙烧烤</a>
+							</li>
+							<li class="txt">
+								<a href="">家纺</a>
+								<a href="">装饰</a>
+							</li>
+							<li class="txt">
+								<a href="">清洁</a>
+								<a href="">收纳</a>
+								<a href="">雨具</a>
+								<a href="">生活电器</a>
+								<a href="">颈枕口罩</a>
+								<a href="">宠物用品</a>
+								<a href="">保暖防护</a>
+							</li>
+							<li class="txt">
+								<a href="">口腔护理</a>
+								<a href="">全身护理</a>
+								<a href="">面部护理</a>
+								<a href="">头发护理</a>
+								<a href="">女性护理</a>
+								<a href="">纤体塑身</a>
+								<a href="">膳食补充</a>
+							</li>
+							<li class="txt">
+								<a href="">笔记手帐</a>
+								<a href="">书写工具</a>
+								<a href="">办公收纳</a>
+								<a href="">贺卡包装</a>
+								<a href="">数码配件</a>
+								<a href="">耳机/音箱</a>
+								<a href="">摄影相关</a>
+							</li>
+							<li class="txt">
+								
+							</li>
+							<li class="txt">
+								
+							</li>
+						</ul>
+					</div>
+					<span class="bottomLine"></span>
+				</div>
+				<!-- 导航 结束 -->
+				<!-- 宝贝头开始 -->
+				<div class="goods">
+					<div class="goods_container">
+				        <a href="">首页</a>
+						<i>→</i>
+				        <a href="">家纺家饰</a>
+						<i>→</i>
+				        <a href="">家纺</a>
+						<i>→</i>
+				        <a href="">床单/毯子</a>
+						<i>→</i>
+				        <a href="">[柔软体贴一夜安睡]丽芙羊多功能便携儿童安睡毯</a>
+					</div>
+				</div>
+				<!-- 宝贝头结束 -->
+				<!-- 商品展示开始 -->
+				<div class="_goods">
+					<div class="goods_left">
+						<!--大图开始-->
+						<div class="goods_img jqzoom" id="preview">
+							<img src="images/goods_detai_1.jpg" alt="" rel="" jqimg="images/goods_detai_1.jpg">
+						</div>
+						<!--大图结束-->
+						<!--小图开始-->
+						<div class="img_small">
+							<ul id="thumblist">
+								<li class="on">
+									<img src="images/goods_detai_1.jpg" alt="" bimg="images/goods_detai_1.jpg" onclick="preview(this)">
+								</li>
+								<li>
+									<img src="images/goods_detai_2.jpg" alt="" bimg="images/goods_detai_2.jpg" onclick="preview(this)">
+								</li>
+								<li>
+									<img src="images/goods_detai_3.jpg" alt="" bimg="images/goods_detai_3.jpg" onclick="preview(this)">
+								</li>
+								<li>
+									<img src="images/goods_detai_4.jpg" alt="" bimg="images/goods_detai_4.jpg" onclick="preview(this)">
+								</li>
+								<li>
+									<img src="images/goods_detai_5.jpg" alt="" bimg="images/goods_detai_5.jpg" onclick="preview(this)">
+								</li>
+								<li>
+									<img src="images/goods_detai_6.jpg" alt="" bimg="images/goods_detai_6.jpg" onclick="preview(this)">
+								</li>
+								<li>
+									<img src="images/goods_detai_7.jpg" alt="" bimg="images/goods_detai_7.jpg" onclick="preview(this)">
+								</li>
+								<li>
+									<img src="images/goods_detai_8.jpg" alt="" bimg="images/goods_detai_8.jpg" onclick="preview(this)">
+								</li>
+								<li>
+									<img src="images/goods_detai_9.jpg" alt="" bimg="images/goods_detai_9.jpg" onclick="preview(this)">
+								</li>
+								<li>
+									<img src="images/goods_detai_10.jpg" alt="" bimg="images/goods_detai_10.jpg" onclick="preview(this)">
+								</li>
+							</ul>
+							<div class="prev_btn btn" id="prev">
+								<p></p><img src="images/btn_left.png" alt="">
+							</div>
+							<div class="next_btn btn" id="next">
+								<p></p><img src="images/btn_right.png" alt="">
+							</div>
+						</div>
+						<!--小图结束-->
+					</div>
+					<div class="goods_right">
+						<h3>[ 柔软体贴一夜安睡 ] 丽芙羊多功能便携儿童安睡毯</h3>
+						<p class="txt">
+					       日本LIV HEART 丽芙羊多功能便携安睡毯/儿童毯，超级可爱的小羊陪你一起度过外出旅行和办公午休的静谧安睡时光，-毯子一头带有睡脸香甜的丽芙羊魔术贴缚带，轻松收纳毯身，减小占地，方便易携。毯子采用100%聚酯纤维柔软舒适，呵护宝宝和你的幼嫩肌肤。
+						</p>
+						<p class="sub_txt">
+							<a href="">商品品牌:<span>LIV HEART丽芙之心[日本]</span></a>
+						</p>
+						<div class="activty">
+							<div class="price">
+								<p>
+									<span>优选价</span>
+									<b>&yen;138.00</b>
+								</p>
+								<p>
+									<span>市场价</span>
+									<span>&yen;144.00</span>
+								</p>
+							</div>
+							<div class="sek">
+								<dl>
+									<dt>促销</dt>
+									<dd>限时特惠</dd>
+								</dl>
+							</div>
+						</div>
+						<!-- 选择颜色开始-->
+						<dl class="color">
+							<dt>颜色：</dt>
+							<dd>
+								<ul>
+			                        <li title="棕色"><img src="images/goods_detai_2.jpg"></li>
+			                        <li title="粉色" class="on"><img src="images/goods_detai_3.jpg""></li>
+								</ul>
+							</dd>
+						</dl>
+						<!-navWrap- 选择颜色结束-->
+						<!-- 选择尺码开始-->
+						<dl class="size">
+							<dt>尺码：</dt>
+							<dd>
+								<ul>
+			                        <li title="70*100cm" class="on">70*100cm</li>
+								</ul>
+							</dd>
+						</dl>
+						<!-- 选择尺码结束-->
+						<!-- 选择数量开始-->
+						<dl class="num">
+							<dt>数量：</dt>
+							<dd>
+								<ul>
+									<li>
+										<p class="wrap_input">
+											<span class="reduce off" id="reduce">－</span>
+											<input type="text" value="1" id="goodNum">
+											<span class="add" id="add">+</span>
+										</p>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+						<!-- 选择数量结束-->
+						<!-- 品牌商发货开始 -->
+			            <div class="g_prompt">
+			                <span>提示：</span>
+			                <ul>
+			                    <li><span></span>优集品自营</li>
+			                    <li><span></span>正品保障</li>
+			                    <li><span></span>满额包邮</li>
+			                </ul>
+			            </div>
+            			<!-- 品牌商发货结束 -->
+            			<!-- 加入购物袋开始-->
+						<div class="collection">
+			                <span id="col" class="col">收藏</span>
+			                <a href="" target="_blank" style="display:none;">立即购买</a>
+			                <span class="add_car" style="display: block">
+			                	<img src="images/shopping-bag.png" alt="">加入购物袋
+			                </span>
+						</div>
+						<!-- 加入购物袋结束-->
+					</div>
+				</div>
+				<!-- 商品展示结束 -->
+				<!-- 商品详情开始 -->
+				<div class="shop_details">
+					<div class="similar">
+						<h5>热门推荐</h5>
+						<a href="">
+							<dl>
+								<dt><img src="images/290ca4fe64647732d396deb4cea8635a.jpg" alt=""></dt>
+								<dd>
+									<p class="description">加强型循环迷你吸湿器</p>
+									<p class="price">&yen;90.00</p>
+								</dd>
+							</dl>
+						</a>
+						<a href="">
+							<dl>
+								<dt><img src="images/111eb76d254ff6ca342dac99c6225636.jpg" alt=""></dt>
+								<dd>
+									<p class="description">超细软毛声波电动牙刷</p>
+									<p class="price">&yen;199.00</p>
+								</dd>
+							</dl>
+						</a>
+						<a href="">
+							<dl>
+								<dt><img src="images/96d14518f86d34bab2d6eefcda0bb067.jpg" alt=""></dt>
+								<dd>
+									<p class="description">阿摩家居 漫森全棉斜纹活性印花4件套</p>
+									<p class="price">&yen;239.00</p>
+								</dd>
+							</dl>
+						</a>
+						<a href="">
+							<dl>
+								<dt><img src="images/be61b88feb97dbdb61052b42846c0aa2.jpg" alt=""></dt>
+								<dd>
+									<p class="description">NaNaZ Home 创意猫咪系列地毯垫</p>
+									<p class="price">&yen;58.00</p>
+								</dd>
+							</dl>
+						</a>
+						<a href="">
+							<dl>
+								<dt><img src="images/81d79cd05ad4d2512790651cf8eeca06.jpg" alt=""></dt>
+								<dd>
+									<p class="description">梵瀚 多功能置物柜</p>
+									<p class="price">&yen;168.00</p>
+								</dd>
+							</dl>
+						</a>
+					</div>
+					<div class="details_cont">
+						<div class="detail_menu">
+							<a href="" class="on">商品详情</a>
+							<a href="">品牌介绍</a>
+							<a href="">用户口碑</a>
+						</div>
+						<ul class="detail_message">
+				            <li>
+				            	<span>材质</span>
+				            	<p>面料：100%聚酯纤维  里料：100%聚酯纤维</p>
+				            </li>
+				            <li>
+					            <span>尺寸</span>
+					            <p>长100cm  宽70cm</p>
+				            </li>
+				            <li>
+				            	<span>重量</span>
+				            	<p>327g</p>
+				            </li>
+						</ul>
+						<div class="detial_show">
+							<dl>
+								<dt>
+									日本LIV HEART 丽芙羊多功能便携安睡毯/儿童毯，超级可爱的小羊陪你一起度过外出旅行和办公午休的静谧安睡时光，-毯子一头带有睡脸香甜的丽芙羊魔术贴缚带，轻松收纳毯身，减小占地，方便易携。毯子采用100%聚酯纤维柔软舒适，呵护宝宝和你的幼嫩肌肤。
+								</dt>
+							</dl>
+							<dl>
+								<dt></dt>
+								<dd><img src="images/goods_detai_7.jpg" alt=""></dd>
+							</dl>
+							<dl>
+								<dt></dt>
+								<dd><img src="images/goods_detai_6.jpg" alt=""></dd>
+							</dl>
+							<dl>
+								<dt></dt>
+								<dd><img src="images/goods_detai_3.jpg" alt=""></dd>
+							</dl>
+							<dl>
+								<dt></dt>
+								<dd><img src="images/goods_detai_5.jpg" alt=""></dd>
+							</dl>
+							<dl>
+								<dt></dt>
+								<dd><img src="images/goods_detai_2.jpg" alt=""></dd>
+							</dl>
+							<dl>
+								<dt></dt>
+								<dd><img src="images/goods_detai_8.jpg" alt=""></dd>
+							</dl>
+							<dl>
+								<dt></dt>
+								<dd><img src="images/goods_detai_9.jpg" alt=""></dd>
+							</dl>
+							<div class="attention">
+								<h4>注意事项</h4>
+								<ul>
+									<li>毯子不可用于机洗、干洗、漂白等。出现污迹时，请用温水或稀释的中性洗剂轻柔搓洗，请勿用有色面料擦拭。当意外沾湿并与其他物品摩擦时，沾湿后请立即擦干或晾干。毯子面料柔软需要您温柔用心的对待哦~</li>
+								</ul>
+							</div>
+						</div>
+						<div class="brand">
+							<div class="brand_content">
+								<img src="images/goods_detail_recommend.png" alt="">
+								<img src="images/goods_detail_recommend.png" alt="">
+								<img src="images/goods_detail_recommend.png" alt="">
+								<img src="images/goods_detail_recommend.png" alt="">
+								<img src="images/goods_detail_recommend.png" alt="">
+								<img src="images/goods_detail_recommend.png" alt="">
+							</div>
+						</div>
+						<div class="assess" >
+							<ul>
+								<li>
+									<h5>***</h5>
+									<p>软软柔柔的</p>
+									<h4>
+										<span>客服回答：</span>谢谢您对商品的认可，小U很满足啦啦啦~~~要奖励一个抱抱哟(づ｡◕‿‿◕｡)づ
+									</h4>
+								</li>
+								<li>
+									<h5>f***y</h5>
+									<p>手感超软</p>
+									<h4>
+										<span>客服回答：</span>谢谢您对商品的认可，小U很满足啦啦啦~~~要奖励一个抱抱哟(づ｡◕‿‿◕｡)づ
+									</h4>
+								</li>
+								<li>
+									<h5>***</h5>
+									<p>手感很软 携带方便 羊羊很可爱</p>
+									<h4>
+										<span>客服回答：</span>嗯，这款可爱的丽芙羊多功能儿童毯子是采用100%聚酯纤维制成，手感柔软舒适哦，能很好的呵护宝宝和您幼嫩 的肌肤，另外还有魔术贴缚带设计，可让您轻松收纳毯身，(づ￣ 3￣)づ方便易携呢~~
+									</h4>
+								</li>
+								<li>
+									<h5>l***6</h5>
+									<p>萌萌嗒，好舒服，性价比超高～</p>
+									<h4>
+										<span>客服回答：</span>亲亲，得到您的满意及肯定，小U真是高兴呢～～♪(＾∀＾●)ﾉ~~
+									</h4>
+								</li>
+								<li>
+									<h5>l***m</h5>
+									<p>很可爱柔软的毯子 家里宝贝儿一抱上就舍不得撒手了</p>
+									<h4>
+										<span>客服回答：</span>能得到这么满意的肯定，小U好开心的说~~~来亲亲~（づ￣3￣）づ╭❤～
+									</h4>
+								</li>
+								<li>
+									<h5>4***m</h5>
+									<p>送给朋友的娃~很可爱~</p>
+									<h4>
+										<span>客服回答：</span>小U的商品都是棒棒哒！让小U成为您的购物车里叮当猫，送自己~送别人~哈哈哈~~
+									</h4>
+								</li>
+								<li>
+									<h5>佳***</h5>
+									<p>很不错~</p>
+									<h4>
+										<span>客服回答：</span>您觉得小U的商品妥妥的`(*∩_∩*)′，小U就好有成就感哦ヽ(✿ﾟ▽ﾟ)ノ
+									</h4>
+								</li>
+								<li>
+									<h5>s***m</h5>
+									<p>礼物送给同事的 她很喜欢~</p>
+									<h4>
+										<span>客服回答：</span>小U的商品都是棒棒哒！让小U成为您的购物车里叮当猫，送自己~送别人~哈哈哈~~
+									</h4>
+								</li>
+								<li>
+									<h5>y***n</h5>
+									<p>好~</p>
+									<h4>
+										<span>客服回答：</span>得到您的认可小U心里真的好开心呐，好朋友，抱抱~~接下来小U一定会更努力的，让您更满意，一起加油哟！！！
+									</h4>
+								</li>
+								<li>
+									<h5>~***2</h5>
+									<p>很好~</p>
+									<h4>
+										<span>客服回答：</span>抱抱~~(*^__^*) ~~小U好开心哦！小U会再接再厉的，让您更满意哒！！
+									</h4>
+								</li>
+							</ul>
+							<p class="look_most">查看更多评论</p>
+						</div>
+					</div>
+				</div>
+				<!-- 商品详情结束 -->
+				<!-- 底部版权 开始 -->
+				<div class="copyright">
+					<div class="centerBox">
+						<ul class="clearFix">
+							<li><a href=""><i class="i1"></i>关于优集品</a></li>
+							<li><a href=""><i class="i2"></i>购物指南</a></li>
+							<li><a href=""><i class="i3"></i>消费者告知书</a></li>
+							<li><a href=""><i class="i4"></i>常见问题</a></li>
+						</ul>
+						<ol class="clearFix">
+							<li>客服电话 4000-788-738 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</li>
+							<li>优集品© 2011-2016 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</li>
+							<li>北京优集品网络科技有限公司 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</li>
+							<li>京ICP备11028595号 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</li>
+							<li>京公网安备110105011117 </li>
+
+							<div class="look">关注优集品
+								<div class="pic">
+									<div id="weixin" style="width:130px;height:130px;">
+										<img src="images/app.png">
+										<span></span>
+									</div>
+								</div>
+							</div>
+						</ol>
+					</div>
+				</div>
+				<!-- 底部版权 结束 -->
+				
+				<!-- 回到顶部&&客服 开始 -->
+				<div class="slide">
+					<div class="btn service">
+						<img src="images/Contact_service.png">
+					</div>
+					<div class="btn toTop">
+						<img src="images/backT.png">
+						<p>返回顶部</p>
+					</div>
+				</div>
+				<!-- 回到顶部&&客服 结束 -->
+			</div>
+		</div>
+	</div>
+
+<!-- navWrap -->
+</body>
+</html>

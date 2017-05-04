@@ -1,0 +1,649 @@
+/***************************** 基础样式 ***************************/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100px;
+  background-color: #eee;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 56.25px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 58.59375px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 62.5px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 64.6875px;
+  }
+}
+@media screen and (min-width: 440px) {
+  html {
+    font-size: 68.75px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 75px;
+  }
+}
+@media screen and (min-width: 520px) {
+  html {
+    font-size: 81.25px;
+  }
+}
+@media screen and (min-width: 560px) {
+  html {
+    font-size: 87.5px;
+  }
+}
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 93.75px;
+  }
+}
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 680px) {
+  html {
+    font-size: 106.25px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 112.5px;
+  }
+}
+@media screen and (min-width: 760px) {
+  html {
+    font-size: 118.75px;
+  }
+}
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 125px;
+  }
+}
+@media screen and (min-width: 960px) {
+  html {
+    font-size: 150px;
+  }
+}
+/*把英文写在前面，中文写后面*/
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  font-size: .12rem;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+  border: 0 none;
+}
+ul,
+li {
+  list-style: none;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li,
+ol {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+/******* 用伪元素来清除浮动造成的塌陷 ******/
+.clearFix:after {
+  /* 从Ie8支持 */
+  content: "";
+  display: table;
+  clear: both;
+  overflow: hidden;
+}
+.clearFix {
+  /* Ie 6 7 */
+  zoom: 1;
+}
+body {
+  padding-top: .56rem;
+  position: relative;
+}
+/***************************** 头部导航 ***************************/
+nav {
+  width: 100%;
+  height: .56rem;
+  background: #31313C;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding-left: .16rem;
+  box-sizing: border-box;
+}
+nav h1 {
+  display: inline-block;
+  width: .65rem;
+  height: .2rem;
+  margin-top: .2rem;
+  font-weight: normal;
+}
+nav h1 img {
+  width: .65rem;
+  height: auto;
+}
+nav h1 a {
+  color: #fff;
+  font-size: .18rem;
+}
+nav div {
+  float: right;
+  margin-top: .14rem;
+}
+nav div a span {
+  display: inline-block;
+  width: .3rem;
+  height: .3rem;
+  background: url(../images/sousuo.png) no-repeat;
+  background-size: .3rem auto;
+  padding: 0 .06rem;
+  margin-left: .15rem;
+}
+nav div a .people {
+  background: url(../images/people.png) no-repeat;
+  background-size: .3rem auto;
+}
+nav div a .bag {
+  background: url(../images/bag.png) no-repeat;
+  background-size: .28rem auto;
+}
+/***************************** 隐藏的菜单 ***************************/
+.menu {
+  width: 100%;
+  height: 3.84rem;
+  overflow: auto;
+  background: #fff;
+  position: absolute;
+  top: .56rem;
+  left: 0rem;
+  z-index: 200;
+  display: none;
+  /***添加落空类 控制下拉三角和二级菜单的显示与隐藏***/
+}
+.menu .item {
+  width: 100%;
+  border-top: .01rem solid #f6f6f6;
+}
+.menu .item p {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: .48rem;
+  padding-left: .15rem;
+  font-size: .12rem;
+  position: relative;
+  line-height: .48rem;
+}
+.menu .item p:after {
+  content: "";
+  position: absolute;
+  right: .2rem;
+  top: .1rem;
+  width: .22rem;
+  height: .22rem;
+  background: url(../images/rightbtn.png) no-repeat;
+  -webkit-background-size: .22rem auto;
+  background-size: .22rem auto;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.menu .item .lastBarnd a {
+  display: block;
+  width: 100%;
+  height: .48rem;
+  color: #000;
+}
+.menu .item .lastBarnd :after {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.menu .item div {
+  padding-left: .15rem;
+  height: .48rem;
+  line-height: .48rem;
+  position: relative;
+}
+.menu .item div:after {
+  content: "";
+  position: absolute;
+  left: .3rem;
+  top: .2rem;
+  width: .12rem;
+  height: .12rem;
+  background: url(../images/search.png);
+  background-size: .12rem auto;
+}
+.menu .item div input {
+  width: 91%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: .4rem;
+  height: .22rem;
+  background: #ededed;
+  -webkit-border-radius: .2rem;
+  border-radius: .2rem;
+  border: 0 none;
+  outline: none;
+  font-size: .12rem;
+}
+.menu .item div span {
+  font-size: .14rem;
+  margin-left: .06rem;
+}
+.menu .item ul {
+  width: 100%;
+  display: none;
+}
+.menu .item ul li {
+  height: .48rem;
+  border-top: .01rem solid #f6f6f6;
+}
+.menu .item ul li a {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #4F494B;
+  height: .48rem;
+  line-height: .48rem;
+  padding-left: .32rem;
+}
+.menu .open p:after {
+  transform: rotate(-90deg);
+}
+.menu .open ul {
+  display: block;
+}
+/***************************** 隐藏的模态框 ***************************/
+.model {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+  top: 0;
+  z-index: 5;
+  display: none;
+}
+/*********************** 为body加上类dropDown 控制二级菜单显示***************/
+.dropDown {
+  overflow: hidden;
+}
+.dropDown .menu {
+  display: block;
+}
+.dropDown .model {
+  display: block;
+}
+/*********************** 为body加上类dropDown 控制二级菜单显示***************/
+.dropDown {
+  overflow: hidden;
+}
+.dropDown .menu {
+  display: block;
+}
+.dropDown .model {
+  display: block;
+}
+/***************************** 轮播图 ***************************/
+.swiper-container {
+  width: 100%;
+  height: 3.2rem;
+}
+.swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+.swiper-container .swiper-slide img {
+  width: 100%;
+  height: 3.2rem;
+}
+/***************************** 次导航 ***************************/
+.subNav {
+  width: 100%;
+  height: 1.47rem;
+  background: #fff;
+  margin: .12rem 0;
+  display: box;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+.subNav a {
+  display: block;
+  -webkit-flex: 1;
+  flex: 1;
+  width: 2.13rem;
+  height: 1.47rem;
+  float: left;
+}
+.subNav a img {
+  width: 2.13rem;
+  height: 1.47rem;
+}
+.subNav .subLast {
+  width: 2.14rem;
+}
+.subNav .subLast img {
+  width: 2.14rem;
+}
+/***************************** banner1 ***************************/
+.banner {
+  width: 100%;
+  margin-bottom: .12rem;
+  /************有三角的区域*************/
+  /*************秒杀专区**************/
+  /*************姨妈巾专区**************/
+}
+.banner > a {
+  display: block;
+  margin-bottom: .12rem;
+}
+.banner > a img {
+  width: 100%;
+  height: 3.2rem;
+}
+.banner .special {
+  position: relative;
+}
+.banner .special span {
+  position: absolute;
+  bottom: 0rem;
+  left: .4rem;
+  z-index: 10;
+  width: 0rem;
+  height: 0rem;
+  border: .08rem solid transparent;
+  border-bottom: .1rem solid #fff;
+}
+.banner .time {
+  width: 100%;
+  height: 2.44rem;
+  padding: .1rem 0;
+  background: #fff;
+  margin-bottom: .12rem;
+  position: relative;
+}
+.banner .time .timeGood {
+  float: left;
+  width: 2.43rem;
+  height: 2.43rem;
+}
+.banner .time .timeGood img {
+  width: 2.43rem;
+  height: 2.43rem;
+}
+.banner .time .timeGood span {
+  position: absolute;
+  left: 2.15rem;
+  bottom: .82rem;
+  width: .45rem;
+  height: .45rem;
+  border: 1px dotted #EA5166;
+  border-radius: 50%;
+  line-height: .45rem;
+  text-align: center;
+  color: #EA5166;
+  font-size: .14rem;
+}
+.banner .time .seckill {
+  width: 2.56rem;
+  height: 1.38rem;
+  margin: .5rem 0 0 1.2rem;
+  float: right;
+  font-size: .12rem;
+}
+.banner .time .seckill img {
+  width: 2.18rem;
+  height: auto;
+  display: block;
+  margin-bottom: .12rem;
+}
+.banner .time .seckill span {
+  font-size: .12rem;
+  display: inline-block;
+  width: .62rem;
+  height: .32rem;
+  line-height: .32rem;
+  text-align: center;
+  background: #ECF0F1;
+  vertical-align: middle;
+  border-radius: .05rem;
+}
+.banner .swiper-goods-container {
+  width: 100%;
+  height: 2.9rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #fff;
+  margin-top: -0.12rem;
+  margin-bottom: .12rem;
+}
+.banner .swiper-goods-container .swiper-wrapper {
+  width: 100%;
+  height: 2.9rem;
+}
+.banner .swiper-goods-container .swiper-wrapper .swiper-slide {
+  width: 2.45rem;
+  height: 2.8rem;
+}
+.banner .swiper-goods-container .swiper-wrapper .swiper-slide a {
+  display: block;
+  width: 2.45rem;
+  height: 2.8rem;
+  color: #4F4948;
+}
+.banner .swiper-goods-container .swiper-wrapper .swiper-slide a .pro-img {
+  display: block;
+}
+.banner .swiper-goods-container .swiper-wrapper .swiper-slide a .pro-img img {
+  width: 2.45rem;
+  height: 2.45rem;
+}
+.banner .swiper-goods-container .swiper-wrapper .swiper-slide a .pro-title {
+  font-size: .13rem;
+  padding: .04rem .03rem;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  margin-top: -0.15rem;
+}
+.banner .swiper-goods-container .swiper-wrapper .swiper-slide a .pro-price {
+  font-size: .13rem;
+  color: #E74C3C;
+  display: block;
+  text-align: left;
+  padding: 0 .03rem .16rem;
+}
+.banner .swiper-goods-container .swiper-wrapper .swiper-slide a .pro-price .old-price {
+  color: #BEBDBB;
+  text-decoration: line-through;
+  margin-left: .05rem;
+}
+/***************************** 分类商品列表 ***************************/
+.sortList {
+  width: 100%;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 .05rem;
+}
+.sortList h2 {
+  text-align: center;
+  color: #4F494B;
+  font-size: .15rem;
+  line-height: .5rem;
+  margin-bottom: .1rem;
+  clear: both;
+}
+.sortList .sortItem {
+  width: 6.3rem;
+  height: auto;
+  margin: 0 auto;
+}
+.sortList .sortItem .sort {
+  float: left;
+  width: 3.125rem;
+  height: 3.68rem;
+  background: #fff;
+  -webkit-border-radius: .05rem .05rem .05rem 0;
+  border-radius: .05rem .05rem .05rem 0;
+  margin-bottom: .12rem;
+}
+.sortList .sortItem .sort a {
+  display: block;
+  width: 3.125rem;
+  height: 3.43rem;
+}
+.sortList .sortItem .sort a img {
+  width: 3.125rem;
+  height: 2.77rem;
+  -webkit-border-radius: .05rem .05rem .05rem 0;
+  border-radius: .05rem .05rem .05rem 0;
+}
+.sortList .sortItem .sort a .info1 {
+  padding: .05rem .1rem 0;
+  font-size: .12rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000;
+}
+.sortList .sortItem .sort a .info2 {
+  font-size: .12rem;
+  margin: .1rem 0 .08rem;
+  padding: 0 .1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000;
+}
+.sortList .sortItem .sort .price {
+  font-size: .12rem;
+  color: #ED6D3C;
+  margin-left: .1rem;
+}
+.sortList .sortItem .sort .price del {
+  color: #BEBDBB;
+  margin-left: .15rem;
+}
+/**************************更多********************************/
+.more {
+  float: left;
+  position: relative;
+  width: 3.125rem;
+  height: 3.68rem;
+  background: url(../images/goods-list-bj.png) no-repeat;
+  -webkit-background-size: 3.125rem auto;
+  background-size: 3.125rem auto;
+  -webkit-border-radius: 0 .05rem .05rem 0;
+  border-radius: 0 .05rem .05rem 0;
+}
+.more div {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #4F494B;
+}
+.more div .topP {
+  text-align: center;
+  border-bottom: .01rem solid #828282;
+  line-height: .30rem;
+  margin: 0 .20rem .10rem;
+  font-size: .14rem;
+}
+.more div .lowP {
+  text-align: center;
+  font-size: .12rem;
+}
+.more div span {
+  text-align: center;
+  display: inline-block;
+  margin-top: .15rem;
+  width: .17rem;
+  height: .17rem;
+  background: url(../images/icon55.png);
+  -webkit-background-size: .17rem auto;
+  background-size: .17rem auto;
+}
+/**************************底部推荐********************************/
+.footerBanner {
+  width: 100%;
+  height: .56rem;
+  line-height: .56rem;
+  background: -webkit-rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  bottom: 0rem;
+  left: 0rem;
+  z-index: 10;
+}
+.footerBanner a {
+  color: #fff;
+  margin-left: .1rem;
+}
+.footerBanner a span {
+  display: inline-block;
+  width: .4rem;
+  height: .4rem;
+  line-height: .4rem;
+  margin-right: .05rem;
+}
+.footerBanner a span img {
+  width: .4rem;
+  height: .4rem;
+}
+.footerBanner span.cha {
+  position: absolute;
+  right: .15rem;
+  top: .18rem;
+  width: .18rem;
+  height: .18rem;
+  background: url(../images/close.png) no-repeat;
+  background-size: .18rem auto;
+}

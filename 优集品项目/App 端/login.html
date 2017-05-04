@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="short icon" href="favicon.ico">
+	<title>login</title>
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+	<div class="loginBox">
+		<img src="images/login_01.jpg">
+		<a href="" class="goBack"></a>
+		<div class="main">
+			<div class="user">
+				<span></span>
+				<input type="text" name="username" autocomplete="off"placeholder="请输入账号" class="tel">
+			</div>
+			<div class="psd">
+				<span class="check"></span>
+				<input type="password" name="password" autocomplete="off" placeholder="请输入密码" class="msg">
+			</div>
+			<button>登录</button>
+			<div class="hao">
+				<a href="" class="qt"><i></i> &nbsp;社交账号登录<i></i></a>
+				<a href="https://m.ujipin.com/v4/signin/qq" class="qq"></a>
+			</div>
+		</div>
+	</div>
+
+    <script src ="js/zepto.min.js"></script>
+	<script src ="js/swiper.min.js"></script>
+	<!-- <script src ="js/login.js"></script> -->
+	<script>
+	$('.tel,.msg').on('input',function(){
+		// 获取手机号
+		var tel = $.trim($('.tel').val());
+		// 获取密码
+		var msg = $.trim($('.msg').val());
+		if(tel == "" || msg == ""){
+			$('button').css({background:'rgba(0,0,0,.35)',disabled:"disabled",color:"#ccc"});
+		}else{
+			$('button').css({background:'#E74C3C',disabled:"none",color:"#fff"});
+				// 点击登录按钮
+			$('button').click(function(){
+				if(tel =="admin" && msg == "123" ){
+
+				}else{
+					alert("用户名或者密码错误！");
+				}
+			});
+		}
+	});
+		
+
+	</script>
+</body>
+</html>

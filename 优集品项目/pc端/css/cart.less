@@ -1,0 +1,123 @@
+@import "reset.less";
+@import "header.less";
+/**********************************主体部分*********************************/
+.cart{
+	width:1150px;
+	margin:50px auto;
+	h3{
+		font-size: 20px;
+		font-weight: normal;
+		color:#4a4a4a;
+	}
+	.container{
+		width: 240px;
+	    margin: 177px auto 212px;
+	    dd{
+	    	p{
+	    		font-size:14px;
+	    		a{
+	    			color:#E74C3C;
+	    		}
+	    	}
+	    }
+	}
+}
+.advice{
+	width:1150px;
+	height:360px;
+	margin:30px auto;
+	overflow:hidden;
+	position: relative;
+	ul{
+		list-style: none;
+		width:4640px;
+		height:360px;
+		position:absolute;
+		left:-1160px;
+		top:0px;
+		z-index:2;
+		li{
+			width: 1160px;
+		    height:340px;
+		    float:left;
+			dl{
+				width: 220px;
+			    height: 340px;
+			    float: left;
+			    margin-right: 10px;
+			    position: relative;
+			    margin-bottom: 20px;
+			    // overflow: hidden;
+			    dt{
+			    	width: 220px;
+		    		height: 222px;
+		    		position:relative;
+		    		a{
+		    			display: block;
+		    			float: left;
+		    			img{
+		    				width:220px;
+		    				height:222px;
+		    			}  
+		    		}
+			    }
+			    dd{
+			    	padding-left: 16px;
+				    padding-right: 16px;
+				    padding-top: 16px;
+				    height: 102px;
+				    p.speak{
+					    line-height: 16px;
+					    font-size: 14px;
+					    color: #4A4A4A;
+					    height: 32px;
+					    overflow: hidden;
+					    text-overfllow: ellipsis;
+					    margin-bottom: 5px;
+				    }
+				    p.price{
+						height: 20px;
+					    line-height: 20px;
+					    font-size: 12px;
+					    font-family: "helvetica neues" !important;
+					    span.newPrice{
+							color: #e74c3c;
+	    					margin-right: 15px;
+					    }
+					    span.oldPrice{
+							    color: #828282;
+	    						text-decoration: line-through;
+					    }
+				    }
+			    }
+			}
+		}
+	}
+	.btn1{
+		position: absolute;
+		z-index:5;
+		left:0px;
+	    top: 130px;
+	    width: 20px;
+	    height: 89px;
+	    border-radius: 3px 0px 0px 3px;
+	    display: none;
+	    cursor: pointer;
+	    background: #000000;
+    	opacity: 0.3;
+    	img{
+    		position: absolute;
+		    width: 12px;
+		    height: 21px;
+		    left: 4px;
+		    top: 34px;
+    	}
+	}
+	.rightBtn{
+		left:auto;
+		right:0px;
+	}
+}
+@import "youji.less";
+@import "toTop.less";
+@import "footer.less";

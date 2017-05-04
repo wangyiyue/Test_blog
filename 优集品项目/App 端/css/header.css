@@ -1,0 +1,182 @@
+body {
+  padding-top: .56rem;
+  position: relative;
+}
+/***************************** 头部导航 ***************************/
+nav {
+  width: 100%;
+  height: .56rem;
+  background: #31313C;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  padding-left: .16rem;
+  box-sizing: border-box;
+}
+nav h1 {
+  display: inline-block;
+  width: .65rem;
+  height: .2rem;
+  margin-top: .2rem;
+  font-weight: normal;
+}
+nav h1 img {
+  width: .65rem;
+  height: auto;
+}
+nav h1 a {
+  color: #fff;
+  font-size: .18rem;
+}
+nav div {
+  float: right;
+  margin-top: .14rem;
+}
+nav div a span {
+  display: inline-block;
+  width: .3rem;
+  height: .3rem;
+  background: url(../images/sousuo.png) no-repeat;
+  background-size: .3rem auto;
+  padding: 0 .06rem;
+  margin-left: .15rem;
+}
+nav div a .people {
+  background: url(../images/people.png) no-repeat;
+  background-size: .3rem auto;
+}
+nav div a .bag {
+  background: url(../images/bag.png) no-repeat;
+  background-size: .28rem auto;
+}
+/***************************** 隐藏的菜单 ***************************/
+.menu {
+  width: 100%;
+  height: 3.84rem;
+  overflow: auto;
+  background: #fff;
+  position: absolute;
+  top: .56rem;
+  left: 0rem;
+  z-index: 200;
+  display: none;
+  /***添加落空类 控制下拉三角和二级菜单的显示与隐藏***/
+}
+.menu .item {
+  width: 100%;
+  border-top: .01rem solid #f6f6f6;
+}
+.menu .item p {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: .48rem;
+  padding-left: .15rem;
+  font-size: .12rem;
+  position: relative;
+  line-height: .48rem;
+}
+.menu .item p:after {
+  content: "";
+  position: absolute;
+  right: .2rem;
+  top: .1rem;
+  width: .22rem;
+  height: .22rem;
+  background: url(../images/rightbtn.png) no-repeat;
+  -webkit-background-size: .22rem auto;
+  background-size: .22rem auto;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.menu .item .lastBarnd a {
+  display: block;
+  width: 100%;
+  height: .48rem;
+  color: #000;
+}
+.menu .item .lastBarnd :after {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.menu .item div {
+  padding-left: .15rem;
+  height: .48rem;
+  line-height: .48rem;
+  position: relative;
+}
+.menu .item div:after {
+  content: "";
+  position: absolute;
+  left: .3rem;
+  top: .2rem;
+  width: .12rem;
+  height: .12rem;
+  background: url(../images/search.png);
+  background-size: .12rem auto;
+}
+.menu .item div input {
+  width: 91%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: .4rem;
+  height: .22rem;
+  background: #ededed;
+  -webkit-border-radius: .2rem;
+  border-radius: .2rem;
+  border: 0 none;
+  outline: none;
+  font-size: .12rem;
+}
+.menu .item div span {
+  font-size: .14rem;
+  margin-left: .06rem;
+}
+.menu .item ul {
+  width: 100%;
+  display: none;
+}
+.menu .item ul li {
+  height: .48rem;
+  border-top: .01rem solid #f6f6f6;
+}
+.menu .item ul li a {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #4F494B;
+  height: .48rem;
+  line-height: .48rem;
+  padding-left: .32rem;
+}
+.menu .open p:after {
+  transform: rotate(-90deg);
+}
+.menu .open ul {
+  display: block;
+}
+/***************************** 隐藏的模态框 ***************************/
+.model {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+  top: 0;
+  z-index: 5;
+  display: none;
+}
+/*********************** 为body加上类dropDown 控制二级菜单显示***************/
+.dropDown {
+  overflow: hidden;
+}
+.dropDown .menu {
+  display: block;
+}
+.dropDown .model {
+  display: block;
+}

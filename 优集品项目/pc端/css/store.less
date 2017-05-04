@@ -1,0 +1,132 @@
+@import "reset.less";
+@import "header.less";
+@import "toTop.less";
+@import "footer.less";
+
+@color:#E74C3C;// 红色
+@bg_gray:#FBFBFB;//背景灰色
+@font_color:#b9b9b9;
+
+
+/************** 大图片部分  *****************/
+.store{
+	width:100%;
+	height:auto;
+	.img{
+		width:1150px;
+		margin: 0 auto;
+		margin-bottom: -1px;
+	}
+	.img_bottom{
+		width:1150px;
+		margin: 0 auto;
+		margin-top: 60px;
+	}
+	.model{
+		width:1150px;
+		height:auto;
+		margin:0 auto;
+		.model_item{
+			width:100%;
+			height:auto;
+			overflow: hidden;
+			a{
+				float: left;
+				img{
+					width:575px;
+				}
+			}
+		}
+	}
+	.goods_lst{
+		width:1150px;
+		height:auto;
+		margin:0 auto;
+		.sub_lst{
+			width:920px;
+			height: auto;
+			margin:0 auto;
+			overflow:hidden;
+			li{
+				width:220px;
+				height:320px;
+				background: @bg_gray;
+				text-align: center;
+				float:left;
+				margin: 10px 10px 10px 0;
+				a{
+					display:block;
+					font-size: 14px;
+					font-family:"Gotham Book";
+					color:@font_color;
+					img{
+						width:220px;
+						height:220px;
+					}
+					h4{
+						font-weight: normal;
+						margin: 10px 0;
+					}
+				}
+				.price{
+					overflow:hidden;
+					margin:10px 0;
+					span{
+						display:block;
+						height:20px;
+						line-height: 20px;
+						em{
+							font-style: normal;
+							font-size:20px;
+						}
+						&.first{
+							width:106px;
+							color:@color;
+							float:left;
+							font-size: 14px;
+						}
+						&.sec{
+							width:100px;
+							color:#CFCFCF;
+							text-decoration: line-through;
+							float:right;
+						}
+					}
+				}
+
+			}
+		}
+	}
+	.rightlist{
+		width:130px;
+		height:170px;
+	    background: #c1a58c;
+	    padding: 10px;
+	    position: fixed;
+	    right: 20px;
+	    top:200px;
+	    li{
+			width:108px;
+			height:40px;
+			text-align:center;
+			line-height:40px;
+			color:#fff;
+			border-bottom: 1px dashed #fff;
+			margin:0 auto;
+			a{
+				width:100%;
+				height:100%;
+				display:block;
+				color:#fff;
+				font-size:20px;
+				&:hover{
+					color: #ffef86;
+				}
+			}
+			&:nth-child(4){
+				border-bottom:none;
+			}
+		}
+	}
+
+}

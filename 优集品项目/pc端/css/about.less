@@ -1,0 +1,152 @@
+@import "reset.less";
+@import "header.less";
+
+img{
+	vertical-align: bottom;
+	border:0 none;
+}
+.sty1{
+		color: #4A4A4A;
+	    font-size: 28px;
+	    font-family: "微软雅黑";
+	    margin: 20px 0 20px 0;
+	    font-weight: normal;
+}
+.sty2{
+		line-height: 28px;
+	    color: #4A4A4A;
+	    font-size: 14px;
+	    font-family: "微软雅黑";
+}
+.sty3{
+		border:0 none;
+		margin-top:0px;
+		padding-top:10px;
+}
+/*****************************头部广告******************************/ 
+.headerBg{
+	width:100%;
+	height:420px;
+	background: url(../images/about/headerBg.jpg) center center;
+	margin-bottom: 100px;
+}
+ /*****************************优集品介绍******************************/
+.item{
+	width:1080px;
+	height:405px;
+	margin:0 auto 100px;
+	.leftImg{
+		width:720px;
+		height:405px;
+		float:left;
+	}
+	.itemContent{
+		float: left;
+		width:300px;
+		margin-left: 60px;
+		h3{
+			.sty1;
+		}
+		img{
+			display: block;
+		}
+		p{
+			.sty2;
+		    padding-top: 30px;
+		    margin-top: 18px;
+		    border-top: 1px solid #ECECEC;
+		}
+	}
+} 
+ /*****************************买手介绍******************************/
+
+.buyers{
+ 	width:1080px;
+ 	margin:0 auto 100px;
+ 	h3{
+		.sty1;
+ 	}
+ 	p{
+ 		.sty2;
+    	margin-bottom: 30px;
+ 	}
+ 	img{
+ 		width:1080px;
+ 	}
+}
+ /*****************************在售产品******************************/
+.sales{
+ 	width:1080px;
+ 	margin:0 auto 100px;
+ 	text-align: center;
+ 	h3{
+ 		.sty1;
+ 	}
+ 	p{
+ 		.sty2;
+ 		margin-bottom:60px;
+ 	}
+ 	img{
+ 		width:806px;
+ 	}
+}
+ /*****************************商品数量******************************/
+.number{
+ 	width:100%;
+ 	height:200px;
+ 	margin-bottom:100px;
+ 	background:url(../images/about/number.jpg) center center;
+ 	background-size: auto 200px;
+}
+ /****************************高品质生活******************************/
+.life{
+ 	 .itemContent{
+		margin-left:0;
+		margin-right:60px;
+ 	}
+}
+ /****************************在线平台******************************/
+.online{
+ 	height:321px;
+ 	.leftImg{
+ 		width:671px;
+ 		height:321px;
+ 	}
+ 	.itemContent{
+ 		float: right;
+ 		p{
+ 			.sty3;
+ 		}
+ 	}
+}
+ /****************************实体展厅******************************/
+ .real{
+ 	.itemContent{
+		p{
+			.sty3;
+		}
+ 	}
+ }
+/****************************创始人******************************/
+hr{
+	width:100%;
+	height:1px;
+	background:#ECECEC;
+}
+.boss{
+ 	height:420px;
+ 	padding-top:100px;
+	margin-bottom:140px;
+ 	.leftImg{
+ 		width:662px;
+ 		height:420px;
+ 	}
+ 	.itemContent{
+ 		float: right;
+ 		p{
+ 			.sty3;
+ 		}
+ 	}
+}
+@import "toTop.less";
+@import "footer.less";

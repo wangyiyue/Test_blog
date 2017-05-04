@@ -1,0 +1,105 @@
+@import "reset.less";
+@import "header.less";
+img{
+	vertical-align: middle;
+}
+/*************************头部图片*****************************/
+.headerImg{
+	width:1150px;
+	margin:0 auto;
+	img{
+		width:100%;
+		height:auto;
+	}
+}
+/*************************商品分类*****************************/
+.headerModule{
+	width:1150px;
+	margin:0 auto;
+	a{
+		float:left;
+	}
+}
+.goodsModuleBox{
+	width:1150px;
+	margin:0 auto;
+	.goods{
+		width:914px;
+		margin:60px auto 50px;
+		dl{
+			width:221px;
+			margin-right:10px;
+			margin-bottom:10px;
+			float: left;
+			dt{
+				width:221px;
+				height:221px;
+				img{
+					width:221px;
+					height:221px;
+				}
+			}
+			dd{
+				width:221px;
+				height:100px;
+				position:relative;
+				padding-top:4px;
+				background: #FBFBFB;
+				font-size:14px;
+				text-align: center;
+			    font-weight: initial;
+			    font-family: "Gotham Book";
+				p{
+					line-height:26px;
+				}
+				.country{
+					width:100%;
+					white-space:nowrap;
+					overflow:hidden;
+					text-overfllow:ellipsis;
+					a{
+						color:#B9B9B9;
+					}
+				}
+				.speak{
+					a{
+						color:#B9B9B9;
+					}
+				}
+				.price{
+					width:170px;
+					position:absolute;
+					bottom:0px;
+					left:50%;
+					margin-left: -85px;
+					.newPrice{
+						font-size:18px;
+						font-family:'Microsoft YaHei';
+						color:#FE8385;
+						float:left;
+					}
+					del{
+						font-size:12px;
+						color:#CFCFCF;
+						float:right;
+						font-family:'Microsoft YaHei';
+					}
+				}
+			}
+		}
+		.none{
+			margin-right:0px;
+		}
+	}
+}
+/*****************************底部图片******************************/ 
+.footerImg{
+	width:1150px;
+	margin:0 auto 130px;
+	img{
+		width:100%;
+		height:auto;
+	}
+}
+@import "toTop.less";
+@import "footer.less";

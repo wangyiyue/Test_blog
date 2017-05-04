@@ -1,0 +1,61 @@
+@import "basic.less";
+@import "header.less";
+/******************************搜索*********************************/ 
+.search{
+	width:100%;
+	background: #fff;
+	div.q{
+		padding-left:.15rem;
+		height:.48rem;
+		line-height:.48rem;
+		position:relative;
+		&:after{
+			content:"";
+			position:absolute;
+			left:.3rem;
+			top:.2rem;
+			width:.12rem;
+			height:.12rem;
+			background:url(../images/search.png);
+			background-size:.12rem auto;
+		}
+		input{
+			width:92%;
+			-webkit-box-sizing:border-box;
+			box-sizing:border-box;
+			padding-left: .4rem;
+			height:.22rem;
+			background:#ededed;
+			-webkit-border-radius:.2rem;
+			border-radius:.2rem;
+			border:0 none;
+			outline:none;
+		}
+		span{
+			font-size:.14rem;
+			margin-left: .07rem;
+		}
+	}
+	.tag{
+		padding-left:.3rem;
+		p{
+			padding: 18px 0;
+	    	color: #B3B3B3;
+		}
+		ul{
+			width:100%;
+			li{
+				float: left;
+				margin-right: .1rem;
+				margin-bottom: .1rem;
+				a{
+					display: block;
+					padding:.08rem .19rem;
+					color:#828282;
+					border:.01rem solid #BEBDBB;
+					border-radius:.4rem;
+				}
+			}
+		}
+	}
+}
