@@ -1,0 +1,36 @@
+body {
+  position: relative;
+}
+.full {
+  width: 100%;
+}
+.full .item {
+  border-bottom: 1px dashed #fa3432;
+  padding: .7rem 0;
+}
+.full .item dl {
+  margin: 0 .8rem;
+}
+.full .item dl dt {
+  color: #fa3432;
+  font-size: .55rem;
+  margin: .4rem 0;
+}
+.full .item dl dt i {
+  width: .7rem;
+  height: .7rem;
+  line-height: .7rem;
+  text-align: center;
+  font-style: normal;
+  display: inline-block;
+  background: #fa3432;
+  border-radius: 50%;
+  color: #fff;
+  margin-right: .4rem;
+}
+.full .item dl dd {
+  font-size: .5rem;
+}
+.full .item:last-child {
+  border-bottom: none;
+}

@@ -1,0 +1,93 @@
+
+/*公共头部================*/
+body{
+	position:relative;
+}
+header{
+	height: 2rem;
+	background-color: #FA3432;
+	line-height: 2rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+header .back{
+	flex: 1;
+	margin-left: .3rem;*/
+}
+header p{
+	font-size: .7rem;
+	color: #fff;
+}
+header i{
+	font-style: normal;
+	flex: 1;
+	text-align: right;
+	margin-right: .8rem;
+}
+
+/*验证手机号码=====================*/
+.menu{
+	display: none;
+}
+.menulist{
+	display: flex;
+	width: 100%;
+	height: 2.9rem;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 2rem;
+	background-color: #FFFFFF;
+}
+.menulist a.icon-home1{
+	background: url("../images/ico_menu_1.png") center top no-repeat;
+}
+.menulist a.icon-home2{
+	background: url("../images/ico_menu_2.png") center top no-repeat;
+}
+.menulist a.icon-home3{
+	background: url("../images/ico_menu_3.png") center top no-repeat;
+}
+.menulist a.icon-home4{
+	background: url("../images/ico_menu_4.png") center top no-repeat;
+	border-right: none;
+}
+.menulist a {
+  flex: 1 1 auto;
+  text-align: center;
+  font-size: .6rem;
+  padding: 1.4rem .2rem 0;
+  background-size: .8rem .8rem;
+  color: red;
+  border-right: 1px solid red;
+}
+.menu .mask{
+	position: absolute;
+	  top: 4.8rem;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background-color: rgba(0, 0, 0, 0.5);
+	
+}
+/*公共底部==============*/
+footer {
+  margin-top: 1rem;
+  border-top: .01rem solid #ddd;
+  padding: .9rem 0;
+  text-align: center;
+  background: #FFFFFF;
+}
+footer .foot {
+  margin-bottom: .5rem;
+  font-size: .5rem;
+}
+footer .foot a {
+  color: #4b4a4a;
+  font-size: .5rem;
+}
+footer .copyright {
+  color: #808080;
+  font-size: .5rem;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+	<title>注册</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="css/phone.css"/>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="layer/layer.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="phone">
+				<!-- 头部 -->
+				<header>
+					<a href="index.html" class="back"><img src="images/back.png"></a>
+					<p>注册</p>
+					<i><a href="javascript:;"class="icon">&#xe64d;</a></i>
+				</header>
+				<!-- 内容部分 -->
+				<div class="register_box"> 
+					<div class="full_top">
+						<img src="images/home_regbanner1.png" alt="">
+						<div class="item">
+							<div class="verifyBox">
+								<input type="number" placeholder="请输入验证码" name="verify" id="verify">
+								<a href="javascript:;" class="getverify" id="getverify">获取验证码</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="setpassword">
+								<input type="password" placeholder=" 请设置登录密码" name="password" id="password">
+								<p>密码要求6到16位字符组成，同时区分大小写</p>
+							</div>
+						</div>
+						<div class="item">
+							<p class="reg_btn">注册</p>
+						</div>
+						<div class="item">
+							<p class="reg_f">账户资金对接北京银行互联网金融存管系统中</p>
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					var  number =  $.trim($('#verify').val());
+					var time = 60;
+					var timer;
+					function countdown(){
+						$('#getverify').text(time + "秒");
+						time --;
+						timer = setTimeout("countdown()", 1000);
+						if(time < 0){
+							clearTimeout(timer);
+							$('#getverify').text("获取验证码");
+						}
+					}
+					var ispassword = /^[^\u4E00-\u9FA0]{6,16}$/;
+					$('#getverify').click(function(){
+						countdown();
+					})
+					$('.reg_btn').click(function(){
+						var verify = $("#verify").val();
+						var password = $("#password").val();
+						if(!verify || !password){
+							layer.open({
+	                            type: 1,
+	                            title: "",
+	                            area: ["12rem", "6rem"],
+	                            content: $('#sub_menu'),
+	                            btn:['确定'],
+                        	});
+                        	return false;
+						}
+					})
+				</script>
+				<!--底部部分-->
+				<footer>
+					<p class="foot">
+						<a href="">触屏版</a>
+						|<a href="">电脑版</a>
+						|<a href="">APP下载</a>
+					</p>
+					<p class="copyright">@2016招财猫理财 浙ICP备14041616号</p>
+				</footer>
+					
+				<!--头部的模态框页面-->
+				<div id = "menu" class="menu">
+					<div class="menulist">
+						<a href="" class="icon-home1">&nbsp;&nbsp;首页&nbsp;&nbsp;</a>
+						<a href="" class="icon-home2">安全保障</a>
+						<a href="" class="icon-home3">我要投资</a>
+						<a href="" class="icon-home4">用户中心</a>
+					</div>
+					<div class="mask" id="mask"></div>
+				</div>
+				<div id="sub_menu">
+				        <p class="item">温馨提示!</p>
+				        <p class="item">验证码或密码不能为空</p>
+				        <!-- <p class="item"><button>确定</button></p> -->
+				</div>
+			</div> 
+		</div>
+	</div>
+<script  src="js/myapp.js"></script>
+<script type="text/javascript">
+	myApp.headdata();
+</script>
+</body>
+</html>

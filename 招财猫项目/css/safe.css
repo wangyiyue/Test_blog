@@ -1,0 +1,88 @@
+
+.con_txt{
+	width: 100%;
+	height: auto;
+}
+
+.con_txt h4 {
+	text-align: center;
+	line-height: 1.8rem;
+}
+.con_txt h4 a{
+	width: 2rem;
+	color: #FFAE28;
+	margin: 0 auto;
+	font-size: .6rem;
+	border-bottom: 1px solid #FFAE28;
+}
+.con_txt .capital{
+	height: 3.8rem;
+	padding: .5rem;
+}
+.con_txt  .capital i{
+	width: .7rem;
+	height: .7rem;
+	line-height: .7rem;
+	display: inline-block;
+	text-align: center;
+	background-color: red;
+	color: #FFFFFF;
+	border-radius: 50%;
+	margin-right: .5rem;
+	font-style: normal;
+}
+.con_lst .capital h3{
+	color: red;
+	font-size: .6rem;
+	line-height: 1.2rem;
+	
+}
+.con_lst .capital p{
+	color: #4D4D4D;
+	font-size: .6rem;
+	height: auto;
+	padding-top: .8rem;	
+}
+._safe{
+	    color: #868484;
+}
+._safe h1{
+	display: block;
+    width: 5rem;
+    height: 0.4rem;
+    text-align: center;
+    line-height: 0.4rem;
+    margin: 0 auto 0.1rem;
+    padding: 0 0.16rem;
+    font-size: 0.6rem;
+    color: #ffae28;
+    border-bottom: 1px solid #ffae28;
+}
+dl{
+	font-size: 0.22rem;
+    width:100%;
+    padding: .5rem;
+}
+dt{
+	color: #fa3432;
+	font-size: .6rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+}
+dt i{
+	display: inline-block;
+    width: .7rem;
+    height: .7rem;
+    line-height: .7rem;
+    text-align: center;
+    border-radius: 50%;
+    background: #fa3432;
+    color: #fff;
+    margin-right: .5rem;
+    font-style: normal;
+}
+dd{
+	margin-left: .5rem;
+	font-size: .6rem;
+    color:#4D4D4D;
+}

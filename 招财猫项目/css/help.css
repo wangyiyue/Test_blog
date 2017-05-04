@@ -1,0 +1,87 @@
+.help_list {
+  width: 100%;
+  height: auto;
+}
+.help_list li {
+  width: 100%;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  padding: 0 .4rem;
+  border-bottom: 1px solid #E4E4E4;
+}
+.help_list li span {
+  display: inline-block;
+  width: 10rem;
+  font-size: .55rem;
+  color: #494848;
+  padding-left: 1.4rem;
+}
+.help_list li span.know {
+  background: url(../images/help_ico_01.png) no-repeat left center;
+  background-size: 1.1rem 1.1rem;
+}
+.help_list li span.reg {
+  background: url(../images/help_ico_02.png) no-repeat left center;
+  background-size: 1.1rem 1.1rem;
+}
+.help_list li span.ident {
+  background: url(../images/help_ico_03.png) no-repeat left center;
+  background-size: 1.1rem 1.1rem;
+}
+.help_list li span.invest {
+  background: url(../images/help_ico_04.png) no-repeat left center;
+  background-size: 1.1rem 1.1rem;
+}
+.help_list li span.recharge {
+  background: url(../images/help_ico_05.png) no-repeat left center;
+  background-size: 1.1rem 1.1rem;
+}
+.help_list li span.words {
+  background: url(../images/help_ico_06.png) no-repeat left center;
+  background-size: 1.1rem 1.1rem;
+}
+.help_list li span.view {
+  background: url(../images/help_ico_07.png) no-repeat left center;
+  background-size: 1.1rem 1.1rem;
+}
+.help_list li span.client {
+  background: url(../images/help_ico_08.png) no-repeat left center;
+  background-size: 1.1rem 1.1rem;
+}
+.help_list li em {
+  font-style: normal;
+}
+.help_list a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+section.customer {
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #f7f7f7;
+  margin-top: .5rem;
+  padding: .4rem;
+  display: -webkit-flex;
+  display: flex;
+}
+section.customer img {
+  -webkit-flex: 1;
+  flex: 1;
+  width: 2rem;
+  height: 2rem;
+}
+section.customer .phone {
+  padding-left: .4rem;
+}
+section.customer .phone p {
+  height: 1rem;
+  line-height: .8rem;
+}
+section.customer .phone p:first-child {
+  font-size: .5rem;
+}
+section.customer .phone p:nth-child(even) {
+  color: #9D9C9C;
+}

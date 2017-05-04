@@ -1,0 +1,82 @@
+
+/*公司简介==================================*/
+h3{
+	text-align: center;
+	padding-top: .5rem;
+}
+ h3 span{
+ 	display: inline-block;
+    color: #525151;
+    line-height: 1rem;
+    padding: 0 .2rem;
+    border-bottom: 2px solid #fdb870;
+	font-size: .6rem;
+}
+.about_wrap{
+	padding: 0 .5rem;
+	overflow: hidden;
+}
+.about_info{
+	overflow: hidden;
+}
+.about_info p{
+	font-size: .5rem;
+    color: #868484;
+    line-height: 1rem;
+    margin: 0.24rem 0;
+    text-indent: 2em;
+}
+/*发展历程========================================*/
+.about_history{
+	padding-right: 0;
+    margin-top: 0.2rem;
+   padding-left: .2rem;
+}
+.about_history li{
+	height: 1rem;
+	overflow: hidden;
+}
+.about_history li:last-child span .line_bottom{
+	display: none;
+}
+.about_history li .mt {
+    display: block;
+    line-height: 1rem;
+    margin: 0;
+}
+.about_history li span {
+    font-size: 0.4rem;
+    color: #868484;
+    float: left;
+    margin: 0 0.2rem;
+}
+.about_history li i {
+    display: block;
+    width: 0.02rem;
+    height: .5rem;
+    background-color: #ff982b;
+    margin: auto;
+}
+.about_history li em {
+    display: block;
+    width: 0.12rem;
+    height: 0.12rem;
+    border-radius: 100%;
+    background-color: #ff982b;
+}
+
+/*轮播图部分===================================*/
+.swiper-container{
+	margin-top: .5rem;
+}
+.swiper-wrapper{
+	height: 10rem;
+}
+.swiper-wrapper .swiper-slide img{
+	width: 100%;
+	max-width: 640px;
+}
+.swiper-button-next img,.swiper-button-prev img{
+	width: 1.5rem;
+	height: 3rem;
+}

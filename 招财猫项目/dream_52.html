@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+		<title>梦想行动52号</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/detai.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="detai">
+					<!-- 头部 -->
+					<header>
+						<a href="index.html" class="back"><img src="images/back.png"></a>
+						<p>梦想行动52号</p>
+						<i><a href="javascript:;"class="icon">&#xe64d;</a></i>
+					</header>
+					<!-- 内容 -->
+					<div class="bg">11%</div>
+					<section class="detai_lists">
+						<div class="times">
+							<div>500元起投</div>
+							<div>期限365天</div>
+						</div>
+						<div class="detail_icon">
+							<div class="icon_top">
+								<span>省级律所法律支持</span>
+								<span>浙大友创战略入股</span>
+							</div>
+							<div class="icon_bottom">
+								<span>招财猫易贷严风控</span>
+								<span>千万级风险保障金</span>
+							</div>
+						</div>
+						<!-- 数据进度条部分 -->
+						<div class="pro" id="pro">
+							<div  class="box" id="box" data-pro="46">
+								<span class="flag" id="flag" style="left:0">0%</span>
+								<p class="data" id = "data" style="width:0"></p>
+							</div>
+						</div>
+						<div class="pro_st">
+							<p class="pro_b">
+								<span>已投资<em class="txt-rsmall">7</em>人>></span>
+								<span>剩余可投<i class="txt-rsmall">566000</i>元</span>
+							</p>
+							<a href="">查看项目详情></a>
+						</div>
+					</section>
+					<section class="detai_bottom">
+						<a href="">收益估算</a> <a href="">立即投资</a>
+					</section>
+					<!--模态框部分-->
+					<div id = "menu" class="menu">
+						<div class="menulist">
+							<a href="" class="icon-home1">&nbsp;&nbsp;首页&nbsp;&nbsp;</a>
+							<a href="" class="icon-home2">安全保障</a>
+							<a href="" class="icon-home3">我要投资</a>
+							<a href="" class="icon-home4">用户中心</a>
+						</div>
+						<div class="mask" id="mask"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+<script  src="js/myapp.js"></script>
+<script type="text/javascript">
+	myApp.headdata();
+	myApp.progress();
+</script>
+	</body>
+</html>

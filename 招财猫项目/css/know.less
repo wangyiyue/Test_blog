@@ -1,0 +1,39 @@
+@color_red :#FA3432;
+
+
+body{
+	position: relative;
+}
+.full{
+	width: 100%;
+	.item{
+		border-bottom: 1px dashed @color_red;
+		padding: .7rem 0;
+		dl{
+			margin: 0 .8rem;
+			dt{
+				color:@color_red;
+				font-size: .55rem;
+				margin:.4rem 0;
+				i{
+					width:.7rem;
+					height:.7rem;
+					line-height: .7rem;
+					text-align: center;
+					font-style: normal;
+					display: inline-block;
+					background: @color_red;
+					border-radius: 50%;
+					color:#fff;
+					margin-right: .4rem;
+				}
+			}
+			dd{
+				font-size:.5rem;
+			}
+		}
+	}
+	.item:last-child{
+		border-bottom:none;
+	}
+}

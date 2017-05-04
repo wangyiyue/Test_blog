@@ -1,0 +1,83 @@
+
+.invest .bg{
+	width: 100%;
+	height: 2.4rem;	
+}
+.invest .bg img{
+	width: 100%;
+	height: 3rem;
+}
+.content_list{
+	margin-top: .8rem;
+	paading-left:.2rem;
+}
+section.content{
+	height: 3.9rem;
+	margin-top: .3rem;
+	padding: .2rem;
+	border-bottom: 1px solid #CCCCCC;
+}
+section.content a{
+	width:100%;
+	height:100%;
+}
+section.content h4{
+	width: 100%;
+	height: 1rem;
+	color: #222222;
+	font-size: .55rem;
+	font-weight: normal;
+}
+section.content div{
+	line-height: 1rem;
+	text-align: center;
+}.content .sub_co{
+	display: flex;
+}
+section.content .year{
+	flex: 1;
+}
+section.content .year em{
+	font-style: normal;
+}
+section.content .day{
+	flex: 1;
+}
+section.content .day p{
+	 color: #999999;
+}
+section.content .percent{
+	flex: 1;
+	height: 2.4rem;
+}
+.percent .all{
+		width:2rem;
+		height: 100%;
+		margin:0 auto;
+}
+.percent .bg,.percent .outer,.percent .inner,.percent .over50{
+			width:2.4rem;
+			height: 2.4rem;
+			position: absolute;
+			border-radius: 50%;
+			border: 3px solid #CCCCCC;
+}
+.percent .inner{
+			transition: transform .3s;
+			top: -3px;
+			left: -3px;
+}
+.percent .bg{
+	font-size: .8rem;
+	color: red;
+	height:2.4rem;
+	line-height: 2.4rem;
+	text-align: center;
+}
+.percent .inner,.percent .over50{
+		border-color: red;
+}
+/*底部=========*/
+.invest footer{
+	margin-top: 1rem;
+}

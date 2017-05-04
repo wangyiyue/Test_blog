@@ -1,0 +1,91 @@
+/*头部============*/
+body{
+	position: relative;
+}
+.content{
+	height: 26rem;
+}
+section.bg_img{
+	width: 100%;
+	height: 7rem;
+	background-size: 146px 110px;
+	background: url(../images/maomao.png) no-repeat center center;	
+}
+.tel_reg{
+	padding: 0 .5rem;
+	position: relative;
+}
+.tel_reg .input_box{
+	position: relative;
+}
+.tel_reg p{
+	font-size: .6rem;
+	color: #222;
+	padding-bottom: .3rem;
+}
+.tel_reg input{
+	width: 96%;
+	height: 1.4rem;
+	outline: none;
+	border: 1px solid #ccc;
+	font-size:.6rem;
+	border-radius: 5px;	
+	padding-left: 1.3rem;
+	background:url(../images/phone.png) no-repeat .3rem center #fff;
+	background-size:.7rem 1.4rem;
+
+}
+.tel_reg .txt{
+	height:.9rem;
+	line-height:.9rem;
+	font-size: .5rem;
+	color: #808080;
+	background: url(../images/sev.png) no-repeat left center;
+	background-size:.6rem .7rem;
+	padding-left: .7rem;
+}
+.register .next{
+	width: 96%;
+	height: 1.6rem;
+	line-height: 1.6rem;
+	outline: none;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background: #FA3432;
+	color: #FFFFFF;
+
+	text-align: center;
+	font-size: .7rem;
+	cursor: pointer;
+}
+.register .gre{
+    height: 1.5rem;
+	padding: .3rem .5rem ;
+	text-align: center;
+	font-size: .52rem;
+}
+#menu{
+	display:none;
+}
+#menu p.item{
+	width: 100%;
+	height: 1.4rem;
+	line-height: 1.4rem;
+	text-align: center;
+	color: #000000;
+	font-size: .6rem;
+	margin-top: .5rem;
+}
+.layui-layer-btn{
+	text-align:center !important;
+}
+.layui-layer-btn0{
+	width: 3rem;
+    height: 1.2rem;
+    padding: 0;
+    color: #fff;
+	border-color: #FA3331 !important; 
+    background-color: #FA3331 !important;
+    color: #fff !important;
+    text-align:center !important;
+}

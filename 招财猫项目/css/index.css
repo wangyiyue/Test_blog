@@ -1,0 +1,258 @@
+@charset "utf-8";
+/*重置样式=========================================*/
+html {
+  font-size: 24.3px;
+}
+html,
+body {
+  font-family: "Microsoft YaHei";
+  background-color: #eeeef4;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: #4d4d4d;
+}
+ul,
+ol,
+li,
+a {
+  list-style: none;
+}
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+img {
+  border: 0;
+}
+/*头部部分========================================*/
+header {
+  height: 2rem;
+  background-color: #FA3432;
+  display: flex;
+}
+header .logo_left {
+  flex: 1;
+  display: flex;
+  line-height: 2rem;
+}
+header .logo_left img {
+  margin: .4rem .1rem 0 .3rem;
+  height: 1.1rem;
+}
+header .logo_left h2 {
+  font-size: .6rem;
+  color: #fff;
+  font-weight: normal;
+}
+header .logo_right {
+  flex: 1;
+  color: #fff;
+  font-size: .6rem;
+  text-align: right;
+  line-height: 2rem;
+  margin-right: .3rem;
+}
+header .logo_right a {
+  font-size: .6rem;
+  color: #fff;
+}
+section.list {
+  display: flex;
+  justify-content: space-around;
+  height: 2rem;
+  line-height: 2rem;
+  background-color: #FFFFFF;
+}
+section.list a {
+  font-size: .6rem;
+}
+/*轮播图部分========================================*/
+.swiper-slide img {
+  width: 100%;
+  max-width: 640px;
+}
+/*安全保障部分========================================*/
+.safe {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: .5rem;
+}
+.safe a {
+  display: flex;
+  flex-direction: column;
+  color: #808080;
+}
+.safe a img {
+  width: 1.7rem;
+}
+.safe a span {
+  font-size: .5rem;
+}
+/*新手专享和热门产品部分========================================*/
+.title{
+	padding-left: .3rem;
+}
+.title a {
+  font-size: .7rem;
+  padding-right: 1.3rem;
+  line-height: 1.5rem;
+  float: right;
+}
+.title h2 {
+  height: 1.3rem;
+  line-height: 1.3rem;
+  font-size: .7rem;
+  padding-left:1.2rem;
+  font-weight: normal;
+}
+.title h2.n_p {
+  width: 20rem;
+  background: url(../images/home_ico_08.png) no-repeat 0 center ;
+  background-size: 1.1rem 1.1rem;
+}
+.title h2.hot {
+  background: url(../images/home_ico_09.png) no-repeat;
+  background-size: 1.1rem 1.1rem;
+}
+.title h2.new{
+	background: url(../images/home_ico_10.png) no-repeat;
+  background-size: 1.1rem 1.1rem;
+}
+.new_list {
+  margin: .2rem;
+  border: 1px solid #ccc;
+  padding: .2rem;
+  background-color: #fff;
+}
+.new_list h3 {
+  font-size: .5rem;
+}
+.new_list ul {
+  display: flex;
+}
+.new_list ul em {
+  font-style: normal;
+}
+.new_list ul .data1 {
+	width: 6rem;
+  font-size: .9rem;
+  color: #fb4438;
+  text-align: center;
+  line-height: 3rem;
+}
+.new_list ul .data2 {
+	width: 3.5rem;
+  height: 3rem;
+  flex: 1;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #808080;
+}
+.new_list ul .data2 p {
+  font-size: .6rem;
+}
+.new_list ul .data3 {
+  width: 2.6rem;
+  height: 2.6rem;
+  flex: 1;
+  position: relative;
+}
+.data3 .all{
+		width:2rem;
+		height: 100%;
+		margin:0 auto;
+}
+.data3 .bg,.data3 .outer,.data3 .inner,.data3 .over50{
+			width:2.4rem;
+			height: 2.4rem;
+			position: absolute;
+			border-radius: 50%;
+			border: 3px solid #CCCCCC;
+}
+.data3 .inner{
+			transition: transform .3s;
+			top: -3px;
+			left: -3px;
+}
+.data3 .bg{
+	font-size: .8rem;
+	color: red;
+	height:2.4rem;
+	line-height: 2.4rem;
+	text-align: center;
+}
+.data3 .inner,.data3 .over50{
+		border-color: red;
+}
+/*企业动态部分========================================*/
+.show {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.news {
+  background-color: #fff;
+}
+.news li {
+  padding: .3rem;
+}
+.news li a {
+  display: flex;
+}
+.news li a img {
+  width: 3rem;
+  height: 3rem;
+  flex: 0 0 auto;
+  margin-right: .6rem;
+}
+.news li a div {
+  flex: 1 1 auto;
+  width: 3rem;
+}
+.news li a div .news_title {
+  color: #494848;
+  font-size: .7rem;
+}
+.news li a div .info {
+  margin-top: .4rem;
+  font-size: .6rem;
+  color: #808080;
+}
+.news li a div .info span {
+  float: right;
+}
+/*底部部分========================================*/
+footer {
+  margin-top: .2rem;
+  border-top: .01rem solid #ddd;
+  padding: .3rem 0;
+  text-align: center;
+}
+footer .foot {
+  margin-bottom: .5rem;
+  font-size: .6rem;
+}
+footer .foot a {
+  color: #4b4a4a;
+  font-size: .6rem;
+}
+footer .copyright {
+  color: #808080;
+  font-size: .6rem;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+	<title>帮助中心</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="css/help.css"/>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="help">
+				<!-- 头部 -->
+				<header>
+					<a href="index.html" class="back"><img src="images/back.png"></a>
+					<p>帮助中心</p>
+					<i><a href="javascript:;"class="icon">&#xe64d;</a></i>
+				</header>
+				<!-- 帮助中心列表部分 -->
+				<section class="help_list">
+					<ul>
+						<li>
+							<a href="know.html">
+								<span class="know">了解招财猫</span>
+								<em class="icon_font">&#xe61a;</em>
+							</a>
+						</li>
+						<li>
+							<a href="helpreglogin.html">
+								<span class="reg">注册登录</span>
+								<em class="icon_font">&#xe61a;</em>
+							</a>
+						</li>
+						<li>
+							<a href="helppauth.html">
+								<span class="ident">认证</span>
+								<em class="icon_font">&#xe61a;</em>
+							</a>
+						</li>
+						<li>
+							<a href="helpinvest.html">
+								<span class="invest">投资</span>
+								<em class="icon_font">&#xe61a;</em>
+							</a>
+						</li>
+						<li>
+							<a href="helprecharge.html">
+								<span class="recharge">充值，提现</span>
+								<em class="icon_font">&#xe61a;</em>
+							</a>
+						</li>
+						<li>
+							<a href="helptermexp.html">
+								<span class="words">名词解释</span>
+								<em class="icon_font">&#xe61a;</em>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="view">意见反馈</span>
+								<em class="icon_font">&#xe61a;</em>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="client">客户端下载</span>
+								<em class="icon_font">&#xe61a;</em>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<section class="customer">
+					 <img src="images/help_icon_tel.png" alt=""> 
+					 <div class="phone">
+						<p>拨打客服热线：<span class="txt-o">400-991-7005</span></p>
+						<p>周一到周五9：00--20：00　周六到周日9：00到18：00</p>
+					</div>
+				</section>
+				<!--底部部分-->
+				<footer>
+					<p class="foot">
+						<a href="">触屏版</a>
+						|<a href="">电脑版</a>
+						|<a href="">APP下载</a>
+					</p>
+					<p class="copyright">@2016招财猫理财 浙ICP备14041616号</p>
+				</footer>
+					
+				<!--头部的模态框页面-->
+				<div id = "menu" class="menu">
+					<div class="menulist">
+						<a href="" class="icon-home1">&nbsp;&nbsp;首页&nbsp;&nbsp;</a>
+						<a href="" class="icon-home2">安全保障</a>
+						<a href="" class="icon-home3">我要投资</a>
+						<a href="" class="icon-home4">用户中心</a>
+					</div>
+					<div class="mask" id="mask"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script  src="js/myapp.js"></script>
+<script type="text/javascript">
+	myApp.headdata();
+</script>
+</body>
+</html>

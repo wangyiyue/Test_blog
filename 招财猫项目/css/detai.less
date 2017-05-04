@@ -1,0 +1,208 @@
+.detai{
+	background:#fff;
+	header{
+		background:#F73E17;
+		p{
+			font-size:.5rem;
+		}
+	}
+}
+.bg{
+	width: 100%;
+	height: 2.8rem;
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 2.8rem;
+	font-weight: bold;
+	background-color: #F62F02;
+	p{
+		color:#fff;	
+	}
+	p._top{
+		// color: #fff;
+		font-size: 1.2rem;
+		text-align: center;
+		line-height: 1.4rem;
+		em{
+			font-style:normal;
+		}
+	}
+	p._bottom{
+		// color: #fff;
+		font-size: .55rem;
+		text-align: center;
+		line-height: 1.4rem;
+		font-weight: normal;
+	}
+}
+/* 详情页的列表=============================== */
+section .times{
+	width:100%;
+	font-size:.6rem;
+	border-bottom: 1px solid #eee;
+	padding: .3rem 0;
+	display: -webkit-flex;
+	display: flex;
+	div{
+		-webkit-flex:1;
+		flex:1;
+		line-height:1rem;
+		text-align:center;
+		border-right: .1rem solid #eee;
+	}
+	div:last-child{
+		border-right:none;
+	}
+}
+section .detail_icon{
+	width:100%;
+	height:4rem;
+	margin-top: .4rem;
+	color:#FFC166;
+	font-size:.55rem;	
+	background: url(../images/detail_icon_bg.png) no-repeat center center;	
+	.icon_top{
+		height:2rem;
+		line-height:2rem;
+		display:flex;
+		span:first-child{
+			background:url(../images/detail_icon_01.png) no-repeat .6rem center;
+			background-size: 1.1rem 1.1rem;
+		}
+		span:nth-child(even){
+			background:url(../images/detail_icon_02.png) no-repeat .6rem center;
+			background-size: 1.1rem 1.1rem;
+		}
+	}
+	.icon_bottom{
+		height:2rem;
+		line-height: 2rem;
+		display:flex;
+		span:first-child{
+			background:url(../images/detail_icon_03.png) no-repeat .6rem center;
+			background-size: 1.1rem 1.1rem;
+		}
+		span:nth-child(even){
+			background:url(../images/detail_icon_04.png) no-repeat .6rem center;
+			background-size: 1.1rem 1.1rem;
+		}
+	}
+	span{
+		flex:1;
+		height:2rem;
+		padding-left: 1.75rem;
+	}
+}
+/* 数据进度条部分============================= */
+section .pro{
+	width:100%;
+	padding:0 .6rem;
+	margin-top:1.5rem;
+	.box{
+		width:100%;
+		height:.8rem;
+		background:#ddd;
+		border-radius:.2rem;
+		position:relative;
+		.flag{
+			width:1.3rem;
+			height:.8rem;
+			background:red;
+			color:#fff;
+			text-align:center;
+			line-height:.8rem;
+			border-radius:.2rem;
+			position: absolute;
+			top: -1.2rem;
+			transition:left 1s;   //动画
+			&:after{
+				content:"";
+				border:.3rem solid transparent;
+				border-top:.3rem solid red;
+				position:absolute;
+				top:.75rem;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+		.data{
+			position:absolute;
+			width:0;
+			height:.8rem;
+			transition:width 1s;  //动画效果
+			border-radius:.2rem;
+			background-color:red;
+		}
+	}
+}
+.pro_st{
+	width:100%;
+	height:6rem;
+	position:relative;
+	.pro_b{
+		height:1.2rem;
+		line-height:1.2rem;
+		padding:0 .6rem;
+		display:-webkit-flex;
+		display:flex;
+		span{
+			-webkit-flex:1;
+			flex:1;
+			em,i{
+				font-weight:bold;
+				font-style: normal;
+			}
+		}
+		span:last-child{
+			text-align:right;
+		}
+	}
+	a{	
+		display:block;
+		margin: 0 auto;
+		color:#ADADAD;
+		text-align:center;
+		position:fixed;
+		left:50%;
+		transform: translateX(-50%);
+		bottom:3rem;
+		margin-bottom: .4rem;
+	}
+}
+section.detai_bottom{
+	width:100%;
+	height:3rem;
+	padding:.5rem;
+	background-color:#F0F0F0;
+	position:fixed;
+	bottom:0;
+	left:0;
+	right: 0;
+	line-height:1.5rem;
+	display:-webkit-flex;
+	display:flex;
+	a{	
+		
+		display:inline-block;
+	}
+	a:first-child{
+		width: 3.5rem; 
+		height:1.4rem;
+		font-weight:bold;
+		color:#FEA31B;
+		font-size: .6rem;
+		border-bottom:1px solid #FEA31B;
+	}
+	a:last-child{
+		width:12rem;
+		height:1.4rem;
+		background-color:#F62F02;
+		color:#fff;
+		font-size:.7rem;
+		text-align:center;
+		line-height:1.4rem;
+		border-radius:.2rem;
+		margin-left: .5rem; 
+	}
+}
