@@ -1,9 +1,9 @@
 
 
 $(function(){
-
+	/* 头部搜索js效果 */
 	$('.search').css('width',190);
-		// 搜索框获得焦点时，ol显示 、背景变白色 、 长度变宽
+		/*  搜索框获得焦点时，ol显示 、背景变白色 、 长度变宽 */
 		$('.sear').focus(function(){
 			$('.search').animate({"width":'260px'});
 			$(this).animate({'width':'240px'},function(){
@@ -11,28 +11,28 @@ $(function(){
 				$('.search ol').stop().show();
 			});
 		});
-		// 搜索框失去焦点时，ol隐藏 、背景变灰色 、 长度变小
+		/* 搜索框失去焦点时，ol隐藏 、背景变灰色 、 长度变小 */
 		$('.sear').blur(function(){
 			$('.search ol').stop().hide();
 			$('.search').css('background-color',"#F8F8F8");
 			$(this).stop().animate({'width':'170px'},500);
 			$('.search').animate({"width":'260px'},500);
 		});
-		// 移到ol li标签上时将其背景变色，其兄弟不变
+		/*移到ol li标签上时将其背景变色，其兄弟不变*/
 		$('.search ol li').mouseenter(function(){
 			$(this).css("background-color","#F8F8F8").siblings().css("background-color","#fff");
 		});
-		// 判断内容是否为空，不为空时将ol隐藏
+		/*判断内容是否为空，不为空时将ol隐藏*/
 		$('.sear').on('input',function(){
 			if($('.sear').val() !== "" ){
 				$('.search ol').stop().hide();
 			}
 		});
-		// 鼠标进入手机图标时显示微信,离开隐藏
+		/*鼠标进入手机图标时显示微信,离开隐藏*/
 		$('.function1').hover(function(){
 			$('.weixin').stop().fadeToggle(500);
 		});
-		// 鼠标进入导航时，显示对应的二级菜单
+		/*鼠标进入导航时，显示对应的二级菜单*/
 		$('.nav a').mouseenter(function(){
 			var index = $(this).index();
 			if(index == 0 || index == 1 || index == 7 || index == 8)
